@@ -2,22 +2,39 @@ package com.example.ai;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private LinearLayout breakfastSection;
-    private LinearLayout lunchSection;
-    private LinearLayout dinnerSection;
-    private LinearLayout snacksSection;
-    private LinearLayout breakfastContent;
-    private LinearLayout lunchContent;
-    private LinearLayout dinnerContent;
-    private LinearLayout snacksContent;
+    LinearLayout breakfastSection;
+    LinearLayout lunchSection;
+    LinearLayout dinnerSection;
+    LinearLayout snacksSection;
+
+    LinearLayout breakfastContent;
+    LinearLayout lunchContent;
+    LinearLayout dinnerContent;
+    LinearLayout snacksContent;
+
+    Button btn_breakfast;
+    Button btn_lunch;
+    Button btn_dinner;
+    Button btn_snacks;
+
+    EditText input_calorie;
+
+    Button btn_optimize;
+
+    ArrayList<String> breakfastInputs = new ArrayList<>();
+    ArrayList<String> lunchInputs = new ArrayList<>();
+    ArrayList<String> dinnerInputs = new ArrayList<>();
+    ArrayList<String> snacksInputs = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,37 +45,48 @@ public class HomeActivity extends AppCompatActivity {
         lunchSection = findViewById(R.id.lunchSection);
         dinnerSection = findViewById(R.id.dinnerSection);
         snacksSection = findViewById(R.id.snacksSection);
+
         breakfastContent = findViewById(R.id.breakfastContent);
         lunchContent = findViewById(R.id.lunchContent);
         dinnerContent = findViewById(R.id.dinnerContent);
         snacksContent = findViewById(R.id.snacksContent);
 
-        Button addBreakfastButton = findViewById(R.id.addBreakfastButton);
-        Button addLunchButton = findViewById(R.id.addLunchButton);
-        Button addDinnerButton = findViewById(R.id.addDinnerButton);
-        Button addSnacksButton = findViewById(R.id.addSnacksButton);
+        btn_breakfast = findViewById(R.id.btn_breakfast);
+        btn_lunch = findViewById(R.id.btn_lunch);
+        btn_dinner = findViewById(R.id.btn_dinner);
+        btn_snacks = findViewById(R.id.btn_snacks);
 
+        input_calorie = findViewById(R.id.input_calorie);
+
+        btn_optimize = findViewById(R.id.btn_optimize);
+
+        // Collect input of user
+        btn_optimize.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                collectInput();
+            }
+        });
+
+        // Visibility of sections
         breakfastSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toggleVisibility(breakfastContent);
             }
         });
-
         lunchSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toggleVisibility(lunchContent);
             }
         });
-
         dinnerSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toggleVisibility(dinnerContent);
             }
         });
-
         snacksSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,28 +94,26 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        addBreakfastButton.setOnClickListener(new View.OnClickListener() {
+        // Add text fields per section
+        btn_breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addNewRow(breakfastContent);
             }
         });
-
-        addLunchButton.setOnClickListener(new View.OnClickListener() {
+        btn_lunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addNewRow(lunchContent);
             }
         });
-
-        addDinnerButton.setOnClickListener(new View.OnClickListener() {
+        btn_dinner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addNewRow(dinnerContent);
             }
         });
-
-        addSnacksButton.setOnClickListener(new View.OnClickListener() {
+        btn_snacks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addNewRow(snacksContent);
@@ -105,7 +131,7 @@ public class HomeActivity extends AppCompatActivity {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 1.0f
         ));
-        newEditText.setHint("Enter text");
+        newEditText.setHint("Enter meal: ");
 
         Button removeButton = new Button(this);
         removeButton.setText("x");
@@ -122,7 +148,6 @@ public class HomeActivity extends AppCompatActivity {
 
         newRow.addView(newEditText);
         newRow.addView(removeButton);
-
         section.addView(newRow);
     }
 
@@ -131,6 +156,37 @@ public class HomeActivity extends AppCompatActivity {
             sectionContent.setVisibility(View.GONE);
         } else {
             sectionContent.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void collectInput() {
+        breakfastInputs.clear();
+        lunchInputs.clear();
+        dinnerInputs.clear();
+        snacksInputs.clear();
+
+        collectInputsFromSection(breakfastContent, breakfastInputs);
+        collectInputsFromSection(lunchContent, lunchInputs);
+        collectInputsFromSection(dinnerContent, dinnerInputs);
+        collectInputsFromSection(snacksContent, snacksInputs);
+
+        Log.d("HomeActivity", "Breakfast Inputs: " + breakfastInputs.toString());
+        Log.d("HomeActivity", "Lunch Inputs: " + lunchInputs.toString());
+        Log.d("HomeActivity", "Dinner Inputs: " + dinnerInputs.toString());
+        Log.d("HomeActivity", "Snacks Inputs: " + snacksInputs.toString());
+        Log.d("HomeActivity", "Calorie: " + input_calorie.getText().toString());
+    }
+
+    private void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs) {
+        int childCount = section.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View child = section.getChildAt(i);
+            if (child instanceof LinearLayout) {
+                LinearLayout row = (LinearLayout) child;
+                EditText editText = (EditText) row.getChildAt(0);
+                String inputText = editText.getText().toString().trim();
+                inputs.add(inputText);
+            }
         }
     }
 }

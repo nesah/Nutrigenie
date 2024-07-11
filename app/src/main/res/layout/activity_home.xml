@@ -14,32 +14,31 @@
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome User"
-            android:textSize="24sp"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:text="@string/txt_welcome"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/inputDataText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Input Data"
-            android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="8dp"
+            android:text="@string/txt_intro"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/calorieLimitText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calorie Limit"
-            android:textSize="18sp"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="8dp"
+            android:text="@string/txt_calorie"
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/calorieLimitInput"
+            android:id="@+id/input_calorie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter calorie limit"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp" />
 
         <LinearLayout
             android:id="@+id/breakfastSection"
@@ -53,9 +52,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Breakfast"
-                android:textSize="18sp"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="8dp"
+                android:text="@string/txt_breakfast"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:id="@+id/breakfastContent"
@@ -64,10 +63,10 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/addBreakfastButton"
+                    android:id="@+id/btn_breakfast"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add" />
+                    android:text="@string/txt_add" />
             </LinearLayout>
         </LinearLayout>
 
@@ -83,7 +82,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lunch"
+                android:text="@string/txt_lunch"
                 android:textSize="18sp"
                 android:paddingBottom="8dp"/>
 
@@ -94,10 +93,10 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/addLunchButton"
+                    android:id="@+id/btn_lunch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add" />
+                    android:text="@string/txt_add" />
             </LinearLayout>
         </LinearLayout>
 
@@ -113,9 +112,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dinner"
-                android:textSize="18sp"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="8dp"
+                android:text="@string/txt_dinner"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:id="@+id/dinnerContent"
@@ -124,10 +123,10 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/addDinnerButton"
+                    android:id="@+id/btn_dinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add" />
+                    android:text="@string/txt_add" />
             </LinearLayout>
         </LinearLayout>
 
@@ -142,9 +141,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Snacks"
-                android:textSize="18sp"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="8dp"
+                android:text="@string/txt_snacks"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:id="@+id/snacksContent"
@@ -153,17 +152,17 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/addSnacksButton"
+                    android:id="@+id/btn_snacks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add" />
+                    android:text="@string/txt_add" />
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnGA"
+            android:id="@+id/btn_optimize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Optimize" />
+            android:text="@string/txt_optimize" />
     </LinearLayout>
 </ScrollView>

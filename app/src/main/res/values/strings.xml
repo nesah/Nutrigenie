@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Nutrigenie</string>
+    <string name="txt_welcome">Welcome, User</string>
+    <string name="txt_intro">Let Nutrigenie help you in formulating hearthy meals everyday!</string>
+    <string name="txt_calorie">Today’s Calorie Limit</string>
+    <string name="txt_breakfast">Breakfast</string>
+    <string name="txt_lunch">Lunch</string>
+    <string name="txt_dinner">Dinner</string>
+    <string name="txt_snacks">Snacks</string>
+    <string name="txt_add">+</string>
+    <string name="txt_optimize">Optimize</string>
 </resources>
