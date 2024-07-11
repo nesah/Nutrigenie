@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#FFFFFF"
+            android:background="#FFC0CB"
             android:padding="16dp"
             android:layout_marginBottom="8dp">
 
@@ -57,11 +57,18 @@
                 android:textSize="18sp"
                 android:paddingBottom="8dp"/>
 
-            <Button
-                android:id="@+id/addBreakfastButton"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/breakfastContent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add" />
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addBreakfastButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -80,11 +87,18 @@
                 android:textSize="18sp"
                 android:paddingBottom="8dp"/>
 
-            <Button
-                android:id="@+id/addLunchButton"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/lunchContent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add" />
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addLunchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -92,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#FFFFFF"
+            android:background="#FFC0CB"
             android:padding="16dp"
             android:layout_marginBottom="8dp">
 
@@ -103,11 +117,18 @@
                 android:textSize="18sp"
                 android:paddingBottom="8dp"/>
 
-            <Button
-                android:id="@+id/addDinnerButton"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/dinnerContent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add" />
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addDinnerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -125,11 +146,18 @@
                 android:textSize="18sp"
                 android:paddingBottom="8dp"/>
 
-            <Button
-                android:id="@+id/addSnacksButton"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/snacksContent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add" />
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addSnacksButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+            </LinearLayout>
         </LinearLayout>
 
         <Button
