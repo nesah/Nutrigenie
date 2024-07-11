@@ -1,9 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:padding="16dp"
+    android:fillViewport="true">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Welcome User Section -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome User"
+            android:textSize="24sp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Input Data Section -->
+        <TextView
+            android:id="@+id/inputDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Data"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Calorie Limit Section -->
+        <TextView
+            android:id="@+id/calorieLimitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie Limit"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/calorieLimitInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter calorie limit"
+            android:paddingBottom="16dp"/>
+
+        <!-- Breakfast Section -->
+        <LinearLayout
+            android:id="@+id/breakfastSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <Button
+                android:id="@+id/addBreakfastButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+        </LinearLayout>
+
+        <!-- Lunch Section -->
+        <LinearLayout
+            android:id="@+id/lunchSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFC0CB"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunch"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <Button
+                android:id="@+id/addLunchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+        </LinearLayout>
+
+        <!-- Dinner Section -->
+        <LinearLayout
+            android:id="@+id/dinnerSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <Button
+                android:id="@+id/addDinnerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+        </LinearLayout>
+
+        <!-- Snacks Section -->
+        <LinearLayout
+            android:id="@+id/snacksSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFC0CB"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snacks"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <Button
+                android:id="@+id/addSnacksButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optimize" />
+    </LinearLayout>
+</ScrollView>
