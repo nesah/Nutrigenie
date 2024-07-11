@@ -2,7 +2,6 @@ package com.example.ai;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +34,7 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<String> lunchInputs = new ArrayList<>();
     ArrayList<String> dinnerInputs = new ArrayList<>();
     ArrayList<String> snacksInputs = new ArrayList<>();
+    String calorie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,6 @@ public class HomeActivity extends AppCompatActivity {
         btn_snacks = findViewById(R.id.btn_snacks);
 
         input_calorie = findViewById(R.id.input_calorie);
-
         btn_optimize = findViewById(R.id.btn_optimize);
 
         // Collect input of user
@@ -65,6 +64,9 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 collectInput();
+                Main m = new Main();
+                calorie = input_calorie.getText().toString();
+                m.getInput(breakfastInputs, lunchInputs, dinnerInputs, snacksInputs, calorie);
             }
         });
 
@@ -169,12 +171,6 @@ public class HomeActivity extends AppCompatActivity {
         collectInputsFromSection(lunchContent, lunchInputs);
         collectInputsFromSection(dinnerContent, dinnerInputs);
         collectInputsFromSection(snacksContent, snacksInputs);
-
-        Log.d("HomeActivity", "Breakfast Inputs: " + breakfastInputs.toString());
-        Log.d("HomeActivity", "Lunch Inputs: " + lunchInputs.toString());
-        Log.d("HomeActivity", "Dinner Inputs: " + dinnerInputs.toString());
-        Log.d("HomeActivity", "Snacks Inputs: " + snacksInputs.toString());
-        Log.d("HomeActivity", "Calorie: " + input_calorie.getText().toString());
     }
 
     private void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs) {
