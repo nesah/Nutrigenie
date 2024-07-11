@@ -2,6 +2,7 @@ package com.example.ai;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.JsonReader;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -35,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<String> lunchInputs = new ArrayList<>();
     ArrayList<String> dinnerInputs = new ArrayList<>();
     ArrayList<String> snacksInputs = new ArrayList<>();
+    String calorie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,14 +60,33 @@ public class HomeActivity extends AppCompatActivity {
         btn_snacks = findViewById(R.id.btn_snacks);
 
         input_calorie = findViewById(R.id.input_calorie);
-
         btn_optimize = findViewById(R.id.btn_optimize);
 
-        // Collect input of user
         btn_optimize.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 collectInput();
+
+                ReaderJson reader = new ReaderJson(v.getContext());
+                reader.readJsonFile("foods.json");
+
+                List<ReaderJson.FoodItem> foodItems = reader.getFoodItems();
+
+                String[] keywords = {"egg", "bread"}; // Example array of keywords
+
+                // Iterate through each keyword
+                for (String keyword : keywords) {
+                    List<ReaderJson.FoodItem> filteredItems = searchFoodItems(foodItems, keyword);
+
+                    // Find item with the lowest calories in filteredItems
+                    ReaderJson.FoodItem lowestCalorieItem = findItemWithLowestCalories(filteredItems);
+
+                    // Log or use the lowest calorie item as needed
+                    if (lowestCalorieItem != null) {
+                        Log.d("Filtered FoodItem", "Keyword: " + keyword + ", Lowest Calorie Item: " + lowestCalorieItem.toString());
+                        // Perform further operations with lowestCalorieItem
+                    }
+                }
             }
         });
 
@@ -121,6 +143,42 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
+    // Method to search for FoodItems containing a specific keyword in the name
+    private List<ReaderJson.FoodItem> searchFoodItems(List<ReaderJson.FoodItem> foodItems, String keyword) {
+        List<ReaderJson.FoodItem> filteredItems = new ArrayList<>();
+        for (ReaderJson.FoodItem item : foodItems) {
+            if (item.getName().toLowerCase().contains(keyword.toLowerCase())) {
+                filteredItems.add(item);
+            }
+        }
+        return filteredItems;
+    }
+
+    // Method to find the item with the lowest calories in a list of FoodItems
+    private ReaderJson.FoodItem findItemWithLowestCalories(List<ReaderJson.FoodItem> foodItems) {
+        if (foodItems.isEmpty()) {
+            return null;
+        }
+
+        ReaderJson.FoodItem lowestCalorieItem = foodItems.get(0);
+        for (ReaderJson.FoodItem item : foodItems) {
+            if (item.getCalories() < lowestCalorieItem.getCalories()) {
+                lowestCalorieItem = item;
+            }
+        }
+        return lowestCalorieItem;
+    }
+
+
+
+
+
+
+
+
+
+
+
     private void addNewRow(final LinearLayout section) {
         final LinearLayout newRow = new LinearLayout(this);
         newRow.setOrientation(LinearLayout.HORIZONTAL);
@@ -169,12 +227,6 @@ public class HomeActivity extends AppCompatActivity {
         collectInputsFromSection(lunchContent, lunchInputs);
         collectInputsFromSection(dinnerContent, dinnerInputs);
         collectInputsFromSection(snacksContent, snacksInputs);
-
-        Log.d("HomeActivity", "Breakfast Inputs: " + breakfastInputs.toString());
-        Log.d("HomeActivity", "Lunch Inputs: " + lunchInputs.toString());
-        Log.d("HomeActivity", "Dinner Inputs: " + dinnerInputs.toString());
-        Log.d("HomeActivity", "Snacks Inputs: " + snacksInputs.toString());
-        Log.d("HomeActivity", "Calorie: " + input_calorie.getText().toString());
     }
 
     private void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs) {
