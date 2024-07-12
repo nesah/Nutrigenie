@@ -1,5 +1,6 @@
 package com.example.ai;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -25,6 +26,12 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<String> snacksInputs = new ArrayList<>();
     String calorie;
 
+    ArrayList<String> bOutput = new ArrayList<>();
+    ArrayList<String> lOutput = new ArrayList<>();
+    ArrayList<String> dOutput = new ArrayList<>();
+    ArrayList<String> sOutput = new ArrayList<>();
+    double calorieValue;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +56,6 @@ public class HomeActivity extends AppCompatActivity {
 
         btn_optimize = findViewById(R.id.btn_optimize);
 
-        // Visibility of sections
         breakfastSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,7 +81,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // Add text fields per section
         btn_breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,6 +106,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        // button optimize functionality
         btn_optimize.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -115,10 +121,10 @@ public class HomeActivity extends AppCompatActivity {
                 List<ReaderJson.FoodItem> foodItems = reader.getFoodItems();
 
                 // storage for data of input from json
-                ArrayList<String> bOutput = new ArrayList<>();
-                ArrayList<String> lOutput = new ArrayList<>();
-                ArrayList<String> dOutput = new ArrayList<>();
-                ArrayList<String> sOutput = new ArrayList<>();
+                 bOutput = new ArrayList<>();
+                 lOutput = new ArrayList<>();
+                 dOutput = new ArrayList<>();
+                 sOutput = new ArrayList<>();
 
                 // get food data in json
                 for (String keyword : breakfastInputs) {
@@ -154,8 +160,10 @@ public class HomeActivity extends AppCompatActivity {
                     }
                 }
 
+                // get calorie input
                 calorie = input_calorie.getText().toString();
 
+                // check all input and process
                 if(breakfastInputs.size() == 0 || lunchInputs.size() == 0 || dinnerInputs.size() == 0 || lunchInputs.size() == 0){
                     Toast.makeText(getApplicationContext(), "All section must have one meal!", Toast.LENGTH_SHORT).show();
                 }
@@ -164,14 +172,13 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 else {
                     try {
-                        double calorieValue = Double.parseDouble(calorie);
+                        calorieValue = Double.parseDouble(calorie);
 
                         if (calorieValue <= 0) {
                             Toast.makeText(getApplicationContext(), "Calorie input must be a positive number!", Toast.LENGTH_SHORT).show();
                         }
                         else {
-                            Main m = new Main();
-                            m.getInput(bOutput, lOutput, dOutput, sOutput, calorie);
+                            new OptimizeTask().execute();
                         }
                     }
                     catch (NumberFormatException e) {
@@ -182,7 +189,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    private List<ReaderJson.FoodItem> searchFoodItems(List<ReaderJson.FoodItem> foodItems, String keyword) {
+    List<ReaderJson.FoodItem> searchFoodItems(List<ReaderJson.FoodItem> foodItems, String keyword) {
         List<ReaderJson.FoodItem> filteredItems = new ArrayList<>();
         for (ReaderJson.FoodItem item : foodItems) {
             if (item.getName().toLowerCase().contains(keyword.toLowerCase())) {
@@ -192,7 +199,7 @@ public class HomeActivity extends AppCompatActivity {
         return filteredItems;
     }
 
-    private ReaderJson.FoodItem findItemWithLowestCalories(List<ReaderJson.FoodItem> foodItems) {
+    ReaderJson.FoodItem findItemWithLowestCalories(List<ReaderJson.FoodItem> foodItems) {
         if (foodItems.isEmpty()) {
             return null;
         }
@@ -206,13 +213,13 @@ public class HomeActivity extends AppCompatActivity {
         return lowestCalorieItem;
     }
 
-    private String formatFoodItem(ReaderJson.FoodItem item) {
+    String formatFoodItem(ReaderJson.FoodItem item) {
         return String.format("%s, %d, %d, %.1f, %d, %d, %d",
                 item.getName(), item.getCalories(), item.getSugar(), item.getSaturatedFat(),
                 item.getSodium(), item.getFiber(), item.getProtein());
     }
 
-    private void addNewRow(final LinearLayout section) {
+    void addNewRow(final LinearLayout section) {
         final LinearLayout newRow = new LinearLayout(this);
         newRow.setOrientation(LinearLayout.HORIZONTAL);
 
@@ -242,7 +249,7 @@ public class HomeActivity extends AppCompatActivity {
         section.addView(newRow);
     }
 
-    private void toggleVisibility(LinearLayout sectionContent) {
+    void toggleVisibility(LinearLayout sectionContent) {
         if (sectionContent.getVisibility() == View.VISIBLE) {
             sectionContent.setVisibility(View.GONE);
         } else {
@@ -250,7 +257,7 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    private void collectInput() {
+    void collectInput() {
         breakfastInputs.clear();
         lunchInputs.clear();
         dinnerInputs.clear();
@@ -262,7 +269,7 @@ public class HomeActivity extends AppCompatActivity {
         collectInputsFromSection(snacksContent, snacksInputs);
     }
 
-    private void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs) {
+    void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs) {
         int childCount = section.getChildCount();
         for (int i = 0; i < childCount; i++) {
             View child = section.getChildAt(i);
@@ -272,6 +279,24 @@ public class HomeActivity extends AppCompatActivity {
                 String inputText = editText.getText().toString().trim();
                 inputs.add(inputText);
             }
+        }
+    }
+
+    class OptimizeTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            Main m = new Main();
+            m.getInput(bOutput, lOutput, dOutput, sOutput, calorieValue);
+            m.getOptimized();
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            // Perform any UI updates here if needed
+            Toast.makeText(getApplicationContext(), "Optimization complete!", Toast.LENGTH_SHORT).show();
         }
     }
 }
