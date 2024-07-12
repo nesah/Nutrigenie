@@ -1,0 +1,31 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="1dp"
+                android:color="#10000000" /> <!-- Change this to your desired border color -->
+            <corners
+                android:topLeftRadius="16dp"
+                android:topRightRadius="16dp"
+                android:bottomLeftRadius="16dp"
+                android:bottomRightRadius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Inner shape -->
+    <item android:top="1dp" android:bottom="1dp" android:left="1dp" android:right="1dp">
+        <vector
+            android:width="319.47dp"
+            android:height="162dp"
+            android:viewportWidth="319.47"
+            android:viewportHeight="162"
+            >
+            <path
+                android:pathData="M16 0H303.47C312.307 0 319.47 7.16344 319.47 16V146C319.47 154.837 312.307 162 303.47 162H16C7.16344 162 0 154.837 0 146V16C0 7.16344 7.16344 0 16 0Z"
+                android:fillColor="#FFFFFF"
+                />
+        </vector>
+    </item>
+</layer-list>

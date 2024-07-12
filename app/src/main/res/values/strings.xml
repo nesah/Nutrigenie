@@ -9,4 +9,5 @@
     <string name="txt_snacks">Snacks</string>
     <string name="txt_add">+</string>
     <string name="txt_optimize">Optimize</string>
+    <string name="meal_plan_result">Meal Plan Result</string>
 </resources>

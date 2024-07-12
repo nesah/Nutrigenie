@@ -3,6 +3,8 @@ package com.example.ai;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -16,6 +18,9 @@ public class MealsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_meals);
 
         Intent intent = getIntent();
@@ -39,7 +44,7 @@ public class MealsActivity extends AppCompatActivity {
                         if (!uniqueMealsSet.contains(mealNamesStr)) {
                             uniqueMealsSet.add(mealNamesStr);
 
-                            String recommendation = "Meal Recommendation " + (bestPlansArray.length - i);
+                            String recommendation = "Meal Plan " + (bestPlansArray.length - i);
                             mealRecommendations.add(recommendation);
                             mealsMap.put(recommendation, bestPlansArray[i]);
 

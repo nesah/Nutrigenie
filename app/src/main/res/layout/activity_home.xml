@@ -1,168 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:fillViewport="true">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <!--header section-->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/welcomeText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:text="@string/txt_welcome"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/inputDataText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="@string/txt_intro"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/calorieLimitText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="@string/txt_calorie"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/input_calorie"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp" />
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:background="@drawable/header_box" />
 
         <LinearLayout
-            android:id="@+id/breakfastSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/txt_welcome"
+                android:textAlignment="viewStart"
+                android:textColor="#252525"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/inputDataText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingBottom="1dp"
+                android:text="@string/txt_intro"
+                android:textColor="#1A1A1A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--calorie limit-->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="10dp">
+
+            <View
+                android:layout_width="330dp"
+                android:layout_height="160dp"
+                android:background="@drawable/calorie_box" />
+
+            <TextView
+                android:id="@+id/calorieLimitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/txt_calorie"
+                android:textColor="#252525"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/rectangle_3"
+                android:layout_width="285.2dp"
+                android:layout_height="78dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/calorie_input" />
+
+            <EditText
+                android:id="@+id/input_calorie"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:background="#FFFFFF"
+                android:paddingBottom="16dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <!--meals section with scrollable view-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#FFC0CB"
-            android:padding="16dp"
-            android:layout_marginBottom="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="@string/txt_breakfast"
-                android:textSize="18sp" />
+            android:layout_marginTop="10dp">
 
             <LinearLayout
-                android:id="@+id/breakfastContent"
+                android:id="@+id/breakfastSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/meal_box"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:padding="15dp">
 
-                <Button
-                    android:id="@+id/btn_breakfast"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/txt_add" />
+                    android:paddingBottom="3dp"
+                    android:text="@string/txt_breakfast"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#252525"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/breakfastContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_breakfast"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/add_btn"
+                        android:text="@string/txt_add" />
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/lunchSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#FFC0CB"
-            android:padding="16dp"
-            android:layout_marginBottom="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txt_lunch"
-                android:textSize="18sp"
-                android:paddingBottom="8dp"/>
 
             <LinearLayout
-                android:id="@+id/lunchContent"
+                android:id="@+id/lunchSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/meal_box"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:padding="15dp">
 
-                <Button
-                    android:id="@+id/btn_lunch"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/txt_add" />
+                    android:paddingBottom="3dp"
+                    android:text="@string/txt_lunch"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#252525"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/lunchContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_lunch"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/add_btn"
+                        android:text="@string/txt_add" />
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/dinnerSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#FFC0CB"
-            android:padding="16dp"
-            android:layout_marginBottom="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="@string/txt_dinner"
-                android:textSize="18sp" />
 
             <LinearLayout
-                android:id="@+id/dinnerContent"
+                android:id="@+id/dinnerSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/meal_box"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:padding="15dp">
 
-                <Button
-                    android:id="@+id/btn_dinner"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/txt_add" />
+                    android:paddingBottom="3dp"
+                    android:text="@string/txt_dinner"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#252525"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/dinnerContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_dinner"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/add_btn"
+                        android:text="@string/txt_add" />
+                </LinearLayout>
+
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/snacksSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#FFC0CB"
-            android:padding="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="@string/txt_snacks"
-                android:textSize="18sp" />
 
             <LinearLayout
-                android:id="@+id/snacksContent"
+                android:id="@+id/snacksSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/meal_box"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:padding="15dp">
 
-                <Button
-                    android:id="@+id/btn_snacks"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/txt_add" />
+                    android:paddingBottom="3dp"
+                    android:text="@string/txt_snacks"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#252525"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/snacksContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_snacks"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/add_btn"
+                        android:text="@string/txt_add" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+    </ScrollView>
 
-        <Button
-            android:id="@+id/btn_optimize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_optimize" />
-    </LinearLayout>
-</ScrollView>
+    <!--button-->
+    <Button
+        android:id="@+id/btn_optimize"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/optimize_btn"
+        android:text="@string/txt_optimize"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
