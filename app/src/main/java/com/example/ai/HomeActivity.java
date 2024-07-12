@@ -1,19 +1,16 @@
 package com.example.ai;
 
-import com.example.ai.FoodItem;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -113,31 +110,25 @@ public class HomeActivity extends AppCompatActivity{
             }
         });
 
-        // button optimize functionality
         btn_optimize.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                // get all user input
                 collectInput();
 
-                // read json file
                 ReaderJson reader = new ReaderJson(v.getContext());
                 reader.readJsonFile("foods.json");
 
-                // store json file contents
                 List<ReaderJson.FoodItem> foodItems = reader.getFoodItems();
 
-                // storage for data of input from json
                  bOutput = new ArrayList<>();
                  lOutput = new ArrayList<>();
                  dOutput = new ArrayList<>();
                  sOutput = new ArrayList<>();
 
-                // get food data in json
-                for (String keyword : breakfastInputs) {
+                for (String keyword : breakfastInputs){
                     List<ReaderJson.FoodItem> filteredItems = searchFoodItems(foodItems, keyword);
                     ReaderJson.FoodItem lowestCalorieItem = findItemWithLowestCalories(filteredItems);
-                    if (lowestCalorieItem != null) {
+                    if (lowestCalorieItem != null){
                         String formattedItem = formatFoodItem(lowestCalorieItem);
                         bOutput.add(formattedItem);
                     }
@@ -150,7 +141,7 @@ public class HomeActivity extends AppCompatActivity{
                         lOutput.add(formattedItem);
                     }
                 }
-                for (String keyword : dinnerInputs) {
+                for (String keyword : dinnerInputs){
                     List<ReaderJson.FoodItem> filteredItems = searchFoodItems(foodItems, keyword);
                     ReaderJson.FoodItem lowestCalorieItem = findItemWithLowestCalories(filteredItems);
                     if (lowestCalorieItem != null) {
@@ -158,7 +149,7 @@ public class HomeActivity extends AppCompatActivity{
                         dOutput.add(formattedItem);
                     }
                 }
-                for (String keyword : snacksInputs) {
+                for (String keyword : snacksInputs){
                     List<ReaderJson.FoodItem> filteredItems = searchFoodItems(foodItems, keyword);
                     ReaderJson.FoodItem lowestCalorieItem = findItemWithLowestCalories(filteredItems);
                     if (lowestCalorieItem != null) {
@@ -167,28 +158,26 @@ public class HomeActivity extends AppCompatActivity{
                     }
                 }
 
-                // get calorie input
                 calorie = input_calorie.getText().toString();
 
-                // check all input and process
                 if(breakfastInputs.size() == 0 || lunchInputs.size() == 0 || dinnerInputs.size() == 0 || lunchInputs.size() == 0){
                     Toast.makeText(getApplicationContext(), "All section must have one meal!", Toast.LENGTH_SHORT).show();
                 }
                 else if(calorie.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Calorie input cannot be empty!", Toast.LENGTH_SHORT).show();
                 }
-                else {
-                    try {
+                else{
+                    try{
                         calorieValue = Double.parseDouble(calorie);
 
-                        if (calorieValue <= 0) {
+                        if (calorieValue <= 0){
                             Toast.makeText(getApplicationContext(), "Calorie input must be a positive number!", Toast.LENGTH_SHORT).show();
                         }
-                        else {
+                        else{
                             startOptimizeTask();
                         }
                     }
-                    catch (NumberFormatException e) {
+                    catch (NumberFormatException e){
                         Toast.makeText(getApplicationContext(), "Invalid calorie input! Please enter a valid number!", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -196,9 +185,9 @@ public class HomeActivity extends AppCompatActivity{
         });
     }
 
-    List<ReaderJson.FoodItem> searchFoodItems(List<ReaderJson.FoodItem> foodItems, String keyword) {
+    List<ReaderJson.FoodItem> searchFoodItems(List<ReaderJson.FoodItem> foodItems, String keyword){
         List<ReaderJson.FoodItem> filteredItems = new ArrayList<>();
-        for (ReaderJson.FoodItem item : foodItems) {
+        for (ReaderJson.FoodItem item : foodItems){
             if (item.getName().toLowerCase().contains(keyword.toLowerCase())) {
                 filteredItems.add(item);
             }
@@ -206,27 +195,27 @@ public class HomeActivity extends AppCompatActivity{
         return filteredItems;
     }
 
-    ReaderJson.FoodItem findItemWithLowestCalories(List<ReaderJson.FoodItem> foodItems) {
-        if (foodItems.isEmpty()) {
+    ReaderJson.FoodItem findItemWithLowestCalories(List<ReaderJson.FoodItem> foodItems){
+        if (foodItems.isEmpty()){
             return null;
         }
 
         ReaderJson.FoodItem lowestCalorieItem = foodItems.get(0);
-        for (ReaderJson.FoodItem item : foodItems) {
-            if (item.getCalories() < lowestCalorieItem.getCalories()) {
+        for (ReaderJson.FoodItem item : foodItems){
+            if (item.getCalories() < lowestCalorieItem.getCalories()){
                 lowestCalorieItem = item;
             }
         }
         return lowestCalorieItem;
     }
 
-    String formatFoodItem(ReaderJson.FoodItem item) {
+    String formatFoodItem(ReaderJson.FoodItem item){
         return String.format("%s, %d, %d, %.1f, %d, %d, %d",
                 item.getName(), item.getCalories(), item.getSugar(), item.getSaturatedFat(),
                 item.getSodium(), item.getFiber(), item.getProtein());
     }
 
-    void addNewRow(final LinearLayout section) {
+    void addNewRow(final LinearLayout section){
         final LinearLayout newRow = new LinearLayout(this);
         newRow.setOrientation(LinearLayout.HORIZONTAL);
 
@@ -244,7 +233,7 @@ public class HomeActivity extends AppCompatActivity{
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
         ));
-        removeButton.setOnClickListener(new View.OnClickListener() {
+        removeButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 section.removeView(newRow);
@@ -256,15 +245,16 @@ public class HomeActivity extends AppCompatActivity{
         section.addView(newRow);
     }
 
-    void toggleVisibility(LinearLayout sectionContent) {
-        if (sectionContent.getVisibility() == View.VISIBLE) {
+    void toggleVisibility(LinearLayout sectionContent){
+        if (sectionContent.getVisibility() == View.VISIBLE){
             sectionContent.setVisibility(View.GONE);
-        } else {
+        }
+        else{
             sectionContent.setVisibility(View.VISIBLE);
         }
     }
 
-    void collectInput() {
+    void collectInput(){
         breakfastInputs.clear();
         lunchInputs.clear();
         dinnerInputs.clear();
@@ -276,11 +266,11 @@ public class HomeActivity extends AppCompatActivity{
         collectInputsFromSection(snacksContent, snacksInputs);
     }
 
-    void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs) {
+    void collectInputsFromSection(LinearLayout section, ArrayList<String> inputs){
         int childCount = section.getChildCount();
-        for (int i = 0; i < childCount; i++) {
+        for (int i = 0; i < childCount; i++){
             View child = section.getChildAt(i);
-            if (child instanceof LinearLayout) {
+            if (child instanceof LinearLayout){
                 LinearLayout row = (LinearLayout) child;
                 EditText editText = (EditText) row.getChildAt(0);
                 String inputText = editText.getText().toString().trim();
@@ -289,22 +279,22 @@ public class HomeActivity extends AppCompatActivity{
         }
     }
 
-    private void startOptimizeTask() {
+    private void startOptimizeTask(){
         new OptimizeTask(this).execute();
     }
 
-    public class OptimizeTask extends AsyncTask<Void, Void, List<FoodItem>[]> {
+    public class OptimizeTask extends AsyncTask<Void, Void, List<FoodItem>[]>{
 
         private Context mContext;
         private ProgressDialog mProgressDialog;
 
-        public OptimizeTask(Context context) {
+        public OptimizeTask(Context context){
             this.mContext = context;
             mProgressDialog = new ProgressDialog(mContext);
         }
 
         @Override
-        protected void onPreExecute() {
+        protected void onPreExecute(){
             super.onPreExecute();
             mProgressDialog.setMessage("Optimizing meal plans...");
             mProgressDialog.setCancelable(false);
@@ -312,16 +302,16 @@ public class HomeActivity extends AppCompatActivity{
         }
 
         @Override
-        protected List<FoodItem>[] doInBackground(Void... voids) {
+        protected List<FoodItem>[] doInBackground(Void... voids){
             Main m = new Main();
             m.getInput(bOutput, lOutput, dOutput, sOutput, calorieValue);
             return m.getOptimized();
         }
 
         @Override
-        protected void onPostExecute(List<FoodItem>[] bestPlansArray) {
+        protected void onPostExecute(List<FoodItem>[] bestPlansArray){
             super.onPostExecute(bestPlansArray);
-            if (mProgressDialog.isShowing()) {
+            if (mProgressDialog.isShowing()){
                 mProgressDialog.dismiss();
             }
 

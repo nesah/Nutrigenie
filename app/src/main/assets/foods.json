@@ -1,0 +1,5134 @@
+[
+    {"name": "Scrambled Eggs", "calories": 91, "sugar": 1, "saturatedFat": 3.1, "sodium": 70, "fiber": 0, "protein": 6},
+    {"name": "Pancakes", "calories": 227, "sugar": 8, "saturatedFat": 2, "sodium": 439, "fiber": 1, "protein": 6},
+    {"name": "Oatmeal", "calories": 158, "sugar": 0, "saturatedFat": 1.5, "sodium": 0, "fiber": 4, "protein": 6},
+    {"name": "French Toast", "calories": 318, "sugar": 14, "saturatedFat": 4.8, "sodium": 507, "fiber": 2, "protein": 13},
+    {"name": "Bacon", "calories": 42, "sugar": 0.2, "saturatedFat": 1.4, "sodium": 194, "fiber": 0, "protein": 3},
+    {"name": "Sausage", "calories": 250, "sugar": 0, "saturatedFat": 9, "sodium": 550, "fiber": 0, "protein": 14},
+    {"name": "Yogurt", "calories": 100, "sugar": 10, "saturatedFat": 1.5, "sodium": 75, "fiber": 0, "protein": 6},
+    {"name": "Granola", "calories": 200, "sugar": 14, "saturatedFat": 2.5, "sodium": 100, "fiber": 4, "protein": 4},
+    {"name": "Fruit Smoothie", "calories": 150, "sugar": 28, "saturatedFat": 0.5, "sodium": 10, "fiber": 2, "protein": 2},
+    {"name": "Bagel with Cream Cheese", "calories": 360, "sugar": 6, "saturatedFat": 10, "sodium": 500, "fiber": 3, "protein": 11},
+    {"name": "Breakfast Burrito", "calories": 290, "sugar": 2, "saturatedFat": 6, "sodium": 580, "fiber": 3, "protein": 12},
+    {"name": "Cereal", "calories": 200, "sugar": 10, "saturatedFat": 1, "sodium": 200, "fiber": 3, "protein": 4},
+    {"name": "Muffin", "calories": 400, "sugar": 37, "saturatedFat": 6, "sodium": 300, "fiber": 2, "protein": 6},
+    {"name": "Toast with Jam", "calories": 150, "sugar": 10, "saturatedFat": 1, "sodium": 200, "fiber": 2, "protein": 4},
+    {"name": "Banana", "calories": 105, "sugar": 14, "saturatedFat": 0.1, "sodium": 1, "fiber": 3, "protein": 1},
+    {"name": "Apple", "calories": 95, "sugar": 19, "saturatedFat": 0.2, "sodium": 2, "fiber": 4, "protein": 0.5},
+    {"name": "Orange Juice", "calories": 112, "sugar": 21, "saturatedFat": 0, "sodium": 2, "fiber": 0.5, "protein": 2},
+    {"name": "Coffee", "calories": 2, "sugar": 0, "saturatedFat": 0, "sodium": 5, "fiber": 0, "protein": 0.3},
+    {"name": "Tea", "calories": 2, "sugar": 0, "saturatedFat": 0, "sodium": 2, "fiber": 0, "protein": 0.3},
+    {"name": "Smoothie Bowl", "calories": 250, "sugar": 28, "saturatedFat": 1, "sodium": 20, "fiber": 5, "protein": 5},
+    {"name": "Breakfast Sandwich", "calories": 300, "sugar": 3, "saturatedFat": 7, "sodium": 700, "fiber": 2, "protein": 15},
+    {"name": "Avocado Toast", "calories": 240, "sugar": 1, "saturatedFat": 2, "sodium": 220, "fiber": 7, "protein": 5},
+    {"name": "Cottage Cheese", "calories": 206, "sugar": 6, "saturatedFat": 1.7, "sodium": 746, "fiber": 0, "protein": 27},
+    {"name": "Hard Boiled Eggs", "calories": 78, "sugar": 1, "saturatedFat": 1.6, "sodium": 62, "fiber": 0, "protein": 6},
+    {"name": "Hash Browns", "calories": 143, "sugar": 0.2, "saturatedFat": 3.6, "sodium": 328, "fiber": 1.3, "protein": 1.6},
+    {"name": "Chia Pudding", "calories": 200, "sugar": 8, "saturatedFat": 1, "sodium": 45, "fiber": 10, "protein": 5},
+    {"name": "Smoothie with Spinach", "calories": 180, "sugar": 22, "saturatedFat": 0.5, "sodium": 20, "fiber": 4, "protein": 4},
+    {"name": "Breakfast Quiche", "calories": 300, "sugar": 3, "saturatedFat": 10, "sodium": 600, "fiber": 1, "protein": 12},
+    {"name": "Breakfast Parfait", "calories": 350, "sugar": 20, "saturatedFat": 3, "sodium": 150, "fiber": 5, "protein": 10},
+    {"name": "Breakfast Pizza", "calories": 320, "sugar": 5, "saturatedFat": 6, "sodium": 700, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Sausage", "calories": 250, "sugar": 0, "saturatedFat": 9, "sodium": 550, "fiber": 0, "protein": 14},
+    {"name": "Egg White Omelette", "calories": 50, "sugar": 0, "saturatedFat": 0.1, "sodium": 150, "fiber": 0, "protein": 10},
+    {"name": "Breakfast Burrito with Vegetables", "calories": 280, "sugar": 2, "saturatedFat": 5, "sodium": 560, "fiber": 3, "protein": 10},
+    {"name": "Breakfast Burrito with Sausage", "calories": 320, "sugar": 2, "saturatedFat": 8, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Tacos", "calories": 200, "sugar": 1, "saturatedFat": 3, "sodium": 300, "fiber": 2, "protein": 10},
+    {"name": "Breakfast Burrito with Eggs", "calories": 300, "sugar": 1, "saturatedFat": 7, "sodium": 580, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Muffin", "calories": 350, "sugar": 20, "saturatedFat": 5, "sodium": 400, "fiber": 2, "protein": 6},
+    {"name": "Breakfast Potatoes", "calories": 180, "sugar": 1, "saturatedFat": 1, "sodium": 300, "fiber": 3, "protein": 3},
+    {"name": "Breakfast Wrap", "calories": 290, "sugar": 3, "saturatedFat": 6, "sodium": 580, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Bagel", "calories": 300, "sugar": 6, "saturatedFat": 2, "sodium": 500, "fiber": 2, "protein": 10},
+    {"name": "Breakfast Casserole", "calories": 350, "sugar": 3, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Biscuit", "calories": 200, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 1, "protein": 4},
+    {"name": "Breakfast Danish", "calories": 300, "sugar": 20, "saturatedFat": 5, "sodium": 300, "fiber": 1, "protein": 5},
+    {"name": "Breakfast Pancakes with Syrup", "calories": 350, "sugar": 25, "saturatedFat": 5, "sodium": 500, "fiber": 2, "protein": 8},
+    {"name": "Breakfast Croissant", "calories": 300, "sugar": 5, "saturatedFat": 10, "sodium": 300, "fiber": 2, "protein": 6},
+    {"name": "Breakfast Bagel with Lox", "calories": 320, "sugar": 6, "saturatedFat": 4, "sodium": 600, "fiber": 3, "protein": 15},
+    {"name": "Breakfast Salad", "calories": 200, "sugar": 3, "saturatedFat": 3, "sodium": 150, "fiber": 4, "protein": 8},
+    {"name": "Breakfast Smoothie with Protein", "calories": 250, "sugar": 18, "saturatedFat": 1, "sodium": 150, "fiber": 5, "protein": 10},
+    {"name": "Breakfast Granola Bar", "calories": 150, "sugar": 10, "saturatedFat": 1.5, "sodium": 100, "fiber": 3, "protein": 5},
+    {"name": "Breakfast Fruit Bowl", "calories": 100, "sugar": 15, "saturatedFat": 0, "sodium": 2, "fiber": 3, "protein": 1},
+    {"name": "Breakfast Egg Muffin", "calories": 200, "sugar": 1, "saturatedFat": 4, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Egg Sandwich", "calories": 250, "sugar": 2, "saturatedFat": 5, "sodium": 500, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Egg Wrap", "calories": 230, "sugar": 2, "saturatedFat": 4, "sodium": 450, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Sausage Wrap", "calories": 270, "sugar": 1, "saturatedFat": 7, "sodium": 550, "fiber": 1, "protein": 14},
+    {"name": "Breakfast Ham and Cheese Sandwich", "calories": 300, "sugar": 3, "saturatedFat": 6, "sodium": 700, "fiber": 2, "protein": 20},
+    {"name": "Breakfast Egg and Cheese Sandwich", "calories": 280, "sugar": 3, "saturatedFat": 5, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Chicken Sandwich", "calories": 350, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 3, "protein": 20},
+    {"name": "Breakfast Burrito with Bacon", "calories": 320, "sugar": 2, "saturatedFat": 8, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Bagel with Egg", "calories": 320, "sugar": 6, "saturatedFat": 2, "sodium": 500, "fiber": 2, "protein": 10},
+    {"name": "Breakfast Smoothie with Berries", "calories": 200, "sugar": 22, "saturatedFat": 0.5, "sodium": 20, "fiber": 4, "protein": 4},
+    {"name": "Breakfast Omelette with Cheese", "calories": 300, "sugar": 2, "saturatedFat": 8, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Omelette with Vegetables", "calories": 250, "sugar": 3, "saturatedFat": 5, "sodium": 500, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Omelette with Ham", "calories": 280, "sugar": 2, "saturatedFat": 7, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Omelette with Bacon", "calories": 300, "sugar": 2, "saturatedFat": 8, "sodium": 650, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Omelette with Sausage", "calories": 320, "sugar": 2, "saturatedFat": 9, "sodium": 700, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Sandwich with Sausage", "calories": 350, "sugar": 3, "saturatedFat": 9, "sodium": 750, "fiber": 2, "protein": 20},
+    {"name": "Breakfast Sandwich with Bacon", "calories": 330, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Breakfast Sandwich with Ham", "calories": 320, "sugar": 3, "saturatedFat": 7, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Breakfast Smoothie with Banana", "calories": 200, "sugar": 20, "saturatedFat": 0.5, "sodium": 20, "fiber": 3, "protein": 4},
+    {"name": "Breakfast Smoothie with Spinach", "calories": 180, "sugar": 18, "saturatedFat": 0.5, "sodium": 20, "fiber": 4, "protein": 4},
+    {"name": "Breakfast Burrito with Cheese", "calories": 320, "sugar": 2, "saturatedFat": 8, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Burrito with Ham", "calories": 300, "sugar": 2, "saturatedFat": 7, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Breakfast Burrito with Chicken", "calories": 350, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 20},
+    {"name": "Breakfast Burrito with Egg", "calories": 300, "sugar": 1, "saturatedFat": 7, "sodium": 580, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Sandwich with Chicken", "calories": 350, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 3, "protein": 20},
+    {"name": "Breakfast Sandwich with Turkey", "calories": 320, "sugar": 3, "saturatedFat": 5, "sodium": 700, "fiber": 2, "protein": 20},
+    {"name": "Breakfast Smoothie with Mango", "calories": 200, "sugar": 22, "saturatedFat": 0.5, "sodium": 20, "fiber": 3, "protein": 4},
+    {"name": "Breakfast Smoothie with Pineapple", "calories": 180, "sugar": 20, "saturatedFat": 0.5, "sodium": 20, "fiber": 3, "protein": 3},
+    {"name": "Breakfast Burrito with Vegetables", "calories": 280, "sugar": 2, "saturatedFat": 5, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Turkey", "calories": 320, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 18},
+    {"name": "Breakfast Burrito with Beef", "calories": 350, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 20},
+    {"name": "Breakfast Burrito with Pork", "calories": 340, "sugar": 2, "saturatedFat": 7, "sodium": 680, "fiber": 2, "protein": 18},
+    {"name": "Breakfast Sandwich with Pork", "calories": 350, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Breakfast Sandwich with Beef", "calories": 360, "sugar": 2, "saturatedFat": 9, "sodium": 750, "fiber": 2, "protein": 20},
+    {"name": "Breakfast Sandwich with Vegetables", "calories": 300, "sugar": 3, "saturatedFat": 5, "sodium": 600, "fiber": 4, "protein": 15},
+    {"name": "Breakfast Sandwich with Salmon", "calories": 350, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 2, "protein": 20},
+    {"name": "Breakfast Smoothie with Kale", "calories": 180, "sugar": 18, "saturatedFat": 0.5, "sodium": 20, "fiber": 4, "protein": 4},
+    {"name": "Breakfast Smoothie with Avocado", "calories": 200, "sugar": 15, "saturatedFat": 2, "sodium": 20, "fiber": 5, "protein": 4},
+    {"name": "Breakfast Smoothie with Peanut Butter", "calories": 250, "sugar": 12, "saturatedFat": 2, "sodium": 150, "fiber": 4, "protein": 8},
+    {"name": "Breakfast Burrito with Avocado", "calories": 320, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 15},
+    {"name": "Breakfast Burrito with Tofu", "calories": 300, "sugar": 2, "saturatedFat": 4, "sodium": 580, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Sandwich with Tofu", "calories": 320, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 3, "protein": 15},
+    {"name": "Breakfast Sandwich with Egg Whites", "calories": 200, "sugar": 1, "saturatedFat": 2, "sodium": 500, "fiber": 2, "protein": 10},
+    {"name": "Breakfast Smoothie with Protein Powder", "calories": 220, "sugar": 10, "saturatedFat": 1, "sodium": 150, "fiber": 4, "protein": 20},
+    {"name": "Breakfast Smoothie with Yogurt", "calories": 180, "sugar": 18, "saturatedFat": 1, "sodium": 80, "fiber": 2, "protein": 6},
+    {"name": "Breakfast Smoothie with Coconut", "calories": 200, "sugar": 15, "saturatedFat": 2, "sodium": 20, "fiber": 3, "protein": 4},
+    {"name": "Breakfast Smoothie with Almond Butter", "calories": 250, "sugar": 12, "saturatedFat": 2, "sodium": 150, "fiber": 4, "protein": 8},
+    {"name": "Breakfast Burrito with Kale", "calories": 300, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 15},
+    {"name": "Breakfast Burrito with Spinach", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Mushroom", "calories": 280, "sugar": 2, "saturatedFat": 5, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Bell Peppers", "calories": 280, "sugar": 3, "saturatedFat": 4, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Sandwich with Kale", "calories": 300, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 15},
+    {"name": "Breakfast Sandwich with Spinach", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Sandwich with Mushroom", "calories": 280, "sugar": 2, "saturatedFat": 5, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Sandwich with Bell Peppers", "calories": 280, "sugar": 3, "saturatedFat": 4, "sodium": 560, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Potato", "calories": 320, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 4, "protein": 12},
+    {"name": "Breakfast Burrito with Sweet Potato", "calories": 320, "sugar": 3, "saturatedFat": 4, "sodium": 600, "fiber": 4, "protein": 12},
+    {"name": "Breakfast Burrito with Lentils", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 5, "protein": 12},
+    {"name": "Breakfast Sandwich with Potato", "calories": 320, "sugar": 2, "saturatedFat": 4, "sodium": 600, "fiber": 4, "protein": 12},
+    {"name": "Breakfast Sandwich with Sweet Potato", "calories": 320, "sugar": 3, "saturatedFat": 4, "sodium": 600, "fiber": 4, "protein": 12},
+    {"name": "Breakfast Sandwich with Lentils", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 5, "protein": 12},
+    {"name": "Breakfast Smoothie with Chia Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 6},
+    {"name": "Breakfast Smoothie with Hemp Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 8},
+    {"name": "Breakfast Smoothie with Flax Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 6},
+    {"name": "Breakfast Smoothie with Walnuts", "calories": 250, "sugar": 10, "saturatedFat": 1, "sodium": 100, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Almonds", "calories": 250, "sugar": 10, "saturatedFat": 1, "sodium": 100, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Cashews", "calories": 250, "sugar": 10, "saturatedFat": 2, "sodium": 100, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Pecans", "calories": 250, "sugar": 10, "saturatedFat": 2, "sodium": 100, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Macadamia Nuts", "calories": 250, "sugar": 10, "saturatedFat": 2, "sodium": 100, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Hazelnuts", "calories": 250, "sugar": 10, "saturatedFat": 2, "sodium": 100, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Peanuts", "calories": 250, "sugar": 10, "saturatedFat": 2, "sodium": 150, "fiber": 5, "protein": 8},
+    {"name": "Breakfast Smoothie with Sesame Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 6},
+    {"name": "Breakfast Smoothie with Sunflower Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 6},
+    {"name": "Breakfast Smoothie with Pumpkin Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 8},
+    {"name": "Breakfast Smoothie with Poppy Seeds", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 100, "fiber": 6, "protein": 6},
+    {"name": "Breakfast Burrito with Black Beans", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 6, "protein": 12},
+    {"name": "Breakfast Burrito with Chickpeas", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 6, "protein": 12},
+    {"name": "Breakfast Burrito with Pinto Beans", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 6, "protein": 12},
+    {"name": "Breakfast Sandwich with Black Beans", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 6, "protein": 12},
+    {"name": "Breakfast Sandwich with Chickpeas", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 6, "protein": 12},
+    {"name": "Breakfast Sandwich with Pinto Beans", "calories": 280, "sugar": 2, "saturatedFat": 4, "sodium": 560, "fiber": 6, "protein": 12},
+    {"name": "Bagel with Cream Cheese", "calories": 290, "sugar": 5, "saturatedFat": 6, "sodium": 470, "fiber": 2, "protein": 9},
+    {"name": "Pancakes with Syrup", "calories": 350, "sugar": 18, "saturatedFat": 4, "sodium": 670, "fiber": 2, "protein": 7},
+    {"name": "French Toast", "calories": 320, "sugar": 14, "saturatedFat": 5, "sodium": 600, "fiber": 2, "protein": 8},
+    {"name": "Eggs Benedict", "calories": 400, "sugar": 2, "saturatedFat": 10, "sodium": 850, "fiber": 1, "protein": 18},
+    {"name": "Omelette with Ham and Cheese", "calories": 280, "sugar": 1, "saturatedFat": 8, "sodium": 650, "fiber": 1, "protein": 17},
+    {"name": "Scrambled Eggs with Spinach", "calories": 200, "sugar": 2, "saturatedFat": 5, "sodium": 450, "fiber": 1, "protein": 12},
+    {"name": "Waffles with Strawberries", "calories": 320, "sugar": 12, "saturatedFat": 6, "sodium": 580, "fiber": 3, "protein": 6},
+    {"name": "Granola with Yogurt", "calories": 300, "sugar": 18, "saturatedFat": 2, "sodium": 100, "fiber": 4, "protein": 10},
+    {"name": "Cereal with Milk", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 200, "fiber": 2, "protein": 8},
+    {"name": "Smoothie Bowl with Berries", "calories": 250, "sugar": 20, "saturatedFat": 1, "sodium": 50, "fiber": 5, "protein": 5},
+    {"name": "Avocado Toast", "calories": 240, "sugar": 2, "saturatedFat": 2, "sodium": 220, "fiber": 6, "protein": 6},
+    {"name": "Chia Pudding", "calories": 180, "sugar": 10, "saturatedFat": 1, "sodium": 40, "fiber": 8, "protein": 5},
+    {"name": "Breakfast Quesadilla", "calories": 350, "sugar": 3, "saturatedFat": 7, "sodium": 750, "fiber": 3, "protein": 17},
+    {"name": "Fried Rice with Egg", "calories": 330, "sugar": 1, "saturatedFat": 3, "sodium": 650, "fiber": 2, "protein": 9},
+    {"name": "Fruit Salad", "calories": 150, "sugar": 25, "saturatedFat": 0, "sodium": 10, "fiber": 4, "protein": 2},
+    {"name": "Yogurt Parfait with Granola", "calories": 290, "sugar": 20, "saturatedFat": 2, "sodium": 80, "fiber": 3, "protein": 10},
+    {"name": "Breakfast Pizza", "calories": 400, "sugar": 3, "saturatedFat": 8, "sodium": 850, "fiber": 2, "protein": 18},
+    {"name": "Bacon and Egg Sandwich", "calories": 350, "sugar": 2, "saturatedFat": 7, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Spinach and Feta Wrap", "calories": 270, "sugar": 2, "saturatedFat": 5, "sodium": 580, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Vegetables", "calories": 320, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 12},
+    {"name": "Mango Smoothie", "calories": 200, "sugar": 30, "saturatedFat": 1, "sodium": 20, "fiber": 3, "protein": 4},
+    {"name": "Quinoa Porridge", "calories": 260, "sugar": 5, "saturatedFat": 1, "sodium": 40, "fiber": 6, "protein": 9},
+    {"name": "Apple Cinnamon Oatmeal", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 150, "fiber": 4, "protein": 5},
+    {"name": "Breakfast Tacos", "calories": 300, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 2, "protein": 14},
+    {"name": "Banana Bread", "calories": 250, "sugar": 14, "saturatedFat": 3, "sodium": 200, "fiber": 2, "protein": 4},
+    {"name": "Veggie Breakfast Bowl", "calories": 300, "sugar": 5, "saturatedFat": 3, "sodium": 500, "fiber": 7, "protein": 10},
+    {"name": "Egg White Wrap", "calories": 200, "sugar": 1, "saturatedFat": 2, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Peanut Butter Toast", "calories": 280, "sugar": 4, "saturatedFat": 2, "sodium": 250, "fiber": 4, "protein": 9},
+    {"name": "Cottage Cheese with Fruit", "calories": 180, "sugar": 12, "saturatedFat": 2, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Sausage", "calories": 240, "sugar": 1, "saturatedFat": 8, "sodium": 600, "fiber": 0, "protein": 14},
+    {"name": "Tofu Scramble", "calories": 220, "sugar": 2, "saturatedFat": 2, "sodium": 400, "fiber": 3, "protein": 10},
+    {"name": "Greek Yogurt with Honey", "calories": 150, "sugar": 15, "saturatedFat": 1, "sodium": 60, "fiber": 0, "protein": 10},
+    {"name": "Smoothie with Almond Milk", "calories": 180, "sugar": 15, "saturatedFat": 1, "sodium": 100, "fiber": 3, "protein": 5},
+    {"name": "Cheese and Spinach Omelette", "calories": 250, "sugar": 1, "saturatedFat": 7, "sodium": 550, "fiber": 2, "protein": 16},
+    {"name": "Breakfast Burrito with Chorizo", "calories": 350, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 16},
+    {"name": "Blueberry Muffin", "calories": 300, "sugar": 22, "saturatedFat": 4, "sodium": 300, "fiber": 2, "protein": 5},
+    {"name": "Mango Sticky Rice", "calories": 280, "sugar": 16, "saturatedFat": 3, "sodium": 200, "fiber": 2, "protein": 4},
+    {"name": "Frittata with Vegetables", "calories": 240, "sugar": 3, "saturatedFat": 5, "sodium": 450, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Burrito with Salsa", "calories": 300, "sugar": 3, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Cheese", "calories": 350, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 16},
+    {"name": "Toasted Bagel with Lox", "calories": 320, "sugar": 5, "saturatedFat": 4, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Cinnamon Roll", "calories": 320, "sugar": 22, "saturatedFat": 6, "sodium": 300, "fiber": 2, "protein": 5},
+    {"name": "Sausage and Egg Muffin", "calories": 340, "sugar": 3, "saturatedFat": 7, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Vegetable Quiche", "calories": 280, "sugar": 3, "saturatedFat": 6, "sodium": 600, "fiber": 2, "protein": 12},
+    {"name": "Fruit and Nut Granola Bar", "calories": 200, "sugar": 12, "saturatedFat": 2, "sodium": 80, "fiber": 4, "protein": 4},
+    {"name": "Spinach and Mushroom Omelette", "calories": 220, "sugar": 2, "saturatedFat": 5, "sodium": 450, "fiber": 2, "protein": 14},
+    {"name": "Sweet Potato Hash", "calories": 240, "sugar": 5, "saturatedFat": 2, "sodium": 400, "fiber": 4, "protein": 5},
+    {"name": "Pumpkin Spice Latte", "calories": 300, "sugar": 45, "saturatedFat": 4, "sodium": 200, "fiber": 0, "protein": 10},
+    {"name": "Eggs and Toast", "calories": 220, "sugar": 2, "saturatedFat": 4, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Burrito with Beef", "calories": 360, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 3, "protein": 18},
+    {"name": "Breakfast Burrito with Turkey", "calories": 320, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 14},
+    {"name": "Croissant with Jam", "calories": 300, "sugar": 12, "saturatedFat": 8, "sodium": 300, "fiber": 1, "protein": 5},
+    {"name": "Protein Shake", "calories": 220, "sugar": 10, "saturatedFat": 2, "sodium": 180, "fiber": 2, "protein": 20},  
+    {"name": "Bagel with Cream Cheese", "calories": 290, "sugar": 5, "saturatedFat": 6, "sodium": 470, "fiber": 2, "protein": 9},
+    {"name": "Pancakes with Syrup", "calories": 350, "sugar": 18, "saturatedFat": 4, "sodium": 670, "fiber": 2, "protein": 7},
+    {"name": "French Toast", "calories": 320, "sugar": 14, "saturatedFat": 5, "sodium": 600, "fiber": 2, "protein": 8},
+    {"name": "Eggs Benedict", "calories": 400, "sugar": 2, "saturatedFat": 10, "sodium": 850, "fiber": 1, "protein": 18},
+    {"name": "Omelette with Ham and Cheese", "calories": 280, "sugar": 1, "saturatedFat": 8, "sodium": 650, "fiber": 1, "protein": 17},
+    {"name": "Scrambled Eggs with Spinach", "calories": 200, "sugar": 2, "saturatedFat": 5, "sodium": 450, "fiber": 1, "protein": 12},
+    {"name": "Waffles with Strawberries", "calories": 320, "sugar": 12, "saturatedFat": 6, "sodium": 580, "fiber": 3, "protein": 6},
+    {"name": "Granola with Yogurt", "calories": 300, "sugar": 18, "saturatedFat": 2, "sodium": 100, "fiber": 4, "protein": 10},
+    {"name": "Cereal with Milk", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 200, "fiber": 2, "protein": 8},
+    {"name": "Smoothie Bowl with Berries", "calories": 250, "sugar": 20, "saturatedFat": 1, "sodium": 50, "fiber": 5, "protein": 5},
+    {"name": "Avocado Toast", "calories": 240, "sugar": 2, "saturatedFat": 2, "sodium": 220, "fiber": 6, "protein": 6},
+    {"name": "Chia Pudding", "calories": 180, "sugar": 10, "saturatedFat": 1, "sodium": 40, "fiber": 8, "protein": 5},
+    {"name": "Breakfast Quesadilla", "calories": 350, "sugar": 3, "saturatedFat": 7, "sodium": 750, "fiber": 3, "protein": 17},
+    {"name": "Fried Rice with Egg", "calories": 330, "sugar": 1, "saturatedFat": 3, "sodium": 650, "fiber": 2, "protein": 9},
+    {"name": "Fruit Salad", "calories": 150, "sugar": 25, "saturatedFat": 0, "sodium": 10, "fiber": 4, "protein": 2},
+    {"name": "Yogurt Parfait with Granola", "calories": 290, "sugar": 20, "saturatedFat": 2, "sodium": 80, "fiber": 3, "protein": 10},
+    {"name": "Breakfast Pizza", "calories": 400, "sugar": 3, "saturatedFat": 8, "sodium": 850, "fiber": 2, "protein": 18},
+    {"name": "Bacon and Egg Sandwich", "calories": 350, "sugar": 2, "saturatedFat": 7, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Spinach and Feta Wrap", "calories": 270, "sugar": 2, "saturatedFat": 5, "sodium": 580, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Vegetables", "calories": 320, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 12},
+    {"name": "Mango Smoothie", "calories": 200, "sugar": 30, "saturatedFat": 1, "sodium": 20, "fiber": 3, "protein": 4},
+    {"name": "Quinoa Porridge", "calories": 260, "sugar": 5, "saturatedFat": 1, "sodium": 40, "fiber": 6, "protein": 9},
+    {"name": "Apple Cinnamon Oatmeal", "calories": 220, "sugar": 12, "saturatedFat": 1, "sodium": 150, "fiber": 4, "protein": 5},
+    {"name": "Breakfast Tacos", "calories": 300, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 2, "protein": 14},
+    {"name": "Banana Bread", "calories": 250, "sugar": 14, "saturatedFat": 3, "sodium": 200, "fiber": 2, "protein": 4},
+    {"name": "Veggie Breakfast Bowl", "calories": 300, "sugar": 5, "saturatedFat": 3, "sodium": 500, "fiber": 7, "protein": 10},
+    {"name": "Egg White Wrap", "calories": 200, "sugar": 1, "saturatedFat": 2, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Peanut Butter Toast", "calories": 280, "sugar": 4, "saturatedFat": 2, "sodium": 250, "fiber": 4, "protein": 9},
+    {"name": "Cottage Cheese with Fruit", "calories": 180, "sugar": 12, "saturatedFat": 2, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Sausage", "calories": 240, "sugar": 1, "saturatedFat": 8, "sodium": 600, "fiber": 0, "protein": 14},
+    {"name": "Tofu Scramble", "calories": 220, "sugar": 2, "saturatedFat": 2, "sodium": 400, "fiber": 3, "protein": 10},
+    {"name": "Greek Yogurt with Honey", "calories": 150, "sugar": 15, "saturatedFat": 1, "sodium": 60, "fiber": 0, "protein": 10},
+    {"name": "Smoothie with Almond Milk", "calories": 180, "sugar": 15, "saturatedFat": 1, "sodium": 100, "fiber": 3, "protein": 5},
+    {"name": "Cheese and Spinach Omelette", "calories": 250, "sugar": 1, "saturatedFat": 7, "sodium": 550, "fiber": 2, "protein": 16},
+    {"name": "Breakfast Burrito with Chorizo", "calories": 350, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 16},
+    {"name": "Blueberry Muffin", "calories": 300, "sugar": 22, "saturatedFat": 4, "sodium": 300, "fiber": 2, "protein": 5},
+    {"name": "Mango Sticky Rice", "calories": 280, "sugar": 16, "saturatedFat": 3, "sodium": 200, "fiber": 2, "protein": 4},
+    {"name": "Frittata with Vegetables", "calories": 240, "sugar": 3, "saturatedFat": 5, "sodium": 450, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Burrito with Salsa", "calories": 300, "sugar": 3, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 12},
+    {"name": "Breakfast Burrito with Cheese", "calories": 350, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 16},
+    {"name": "Toasted Bagel with Lox", "calories": 320, "sugar": 5, "saturatedFat": 4, "sodium": 600, "fiber": 2, "protein": 15},
+    {"name": "Cinnamon Roll", "calories": 320, "sugar": 22, "saturatedFat": 6, "sodium": 300, "fiber": 2, "protein": 5},
+    {"name": "Sausage and Egg Muffin", "calories": 340, "sugar": 3, "saturatedFat": 7, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Vegetable Quiche", "calories": 280, "sugar": 3, "saturatedFat": 6, "sodium": 600, "fiber": 2, "protein": 12},
+    {"name": "Fruit and Nut Granola Bar", "calories": 200, "sugar": 12, "saturatedFat": 2, "sodium": 80, "fiber": 4, "protein": 4},
+    {"name": "Spinach and Mushroom Omelette", "calories": 220, "sugar": 2, "saturatedFat": 5, "sodium": 450, "fiber": 2, "protein": 14},
+    {"name": "Sweet Potato Hash", "calories": 240, "sugar": 5, "saturatedFat": 2, "sodium": 400, "fiber": 4, "protein": 5},
+    {"name": "Pumpkin Spice Latte", "calories": 300, "sugar": 45, "saturatedFat": 4, "sodium": 200, "fiber": 0, "protein": 10},
+    {"name": "Eggs and Toast", "calories": 220, "sugar": 2, "saturatedFat": 4, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Breakfast Burrito with Beef", "calories": 360, "sugar": 2, "saturatedFat": 8, "sodium": 700, "fiber": 3, "protein": 18},
+    {"name": "Breakfast Burrito with Turkey", "calories": 320, "sugar": 2, "saturatedFat": 5, "sodium": 600, "fiber": 3, "protein": 14},
+    {"name": "Croissant with Jam", "calories": 300, "sugar": 12, "saturatedFat": 8, "sodium": 300, "fiber": 1, "protein": 5},
+    {"name": "Protein Shake", "calories": 220, "sugar": 10, "saturatedFat": 2, "sodium": 180, "fiber": 2, "protein": 20},
+    {"name": "Coffee", "calories": 2, "sugar": 0, "saturatedFat": 0, "sodium": 5, "fiber": 0, "protein": 0},
+    {"name": "Espresso", "calories": 1, "sugar": 0, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 0},
+    {"name": "Cappuccino", "calories": 120, "sugar": 8, "saturatedFat": 6, "sodium": 80, "fiber": 0, "protein": 7},
+    {"name": "Latte", "calories": 180, "sugar": 12, "saturatedFat": 7, "sodium": 120, "fiber": 0, "protein": 9},
+    {"name": "Macchiato", "calories": 100, "sugar": 6, "saturatedFat": 4, "sodium": 60, "fiber": 0, "protein": 5},
+    {"name": "Americano", "calories": 5, "sugar": 0, "saturatedFat": 0, "sodium": 10, "fiber": 0, "protein": 1},
+    {"name": "Mocha", "calories": 250, "sugar": 32, "saturatedFat": 10, "sodium": 120, "fiber": 1, "protein": 10},
+    {"name": "Hot Chocolate", "calories": 180, "sugar": 25, "saturatedFat": 7, "sodium": 140, "fiber": 2, "protein": 5},
+    {"name": "Tea (Green, Black, Herbal)", "calories": 0, "sugar": 0, "saturatedFat": 0, "sodium": 5, "fiber": 0, "protein": 0},
+    {"name": "Orange Juice", "calories": 110, "sugar": 22, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 2},
+    {"name": "Grapefruit Juice", "calories": 96, "sugar": 20, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 1},
+    {"name": "Apple Juice", "calories": 117, "sugar": 28, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 0},
+    {"name": "Pineapple Juice", "calories": 133, "sugar": 32, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 1},
+    {"name": "Cranberry Juice", "calories": 116, "sugar": 31, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 0},
+    {"name": "Tomato Juice", "calories": 41, "sugar": 9, "saturatedFat": 0, "sodium": 654, "fiber": 1, "protein": 2},
+    {"name": "Smoothie (Various Fruit)", "calories": 150, "sugar": 20, "saturatedFat": 1, "sodium": 20, "fiber": 3, "protein": 5},
+    {"name": "Lemon Water", "calories": 5, "sugar": 0, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 0},
+    {"name": "Coconut Water", "calories": 45, "sugar": 6, "saturatedFat": 0, "sodium": 252, "fiber": 3, "protein": 2},
+    {"name": "Sparkling Water", "calories": 0, "sugar": 0, "saturatedFat": 0, "sodium": 0, "fiber": 0, "protein": 0},
+    {"name": "Tapsilog (Beef Tapa with Garlic Fried Rice and Fried Egg)", "calories": 550, "sugar": 10, "saturatedFat": 12, "sodium": 900, "fiber": 3, "protein": 30},
+    {"name": "Longsilog (Pork Longganisa with Garlic Fried Rice and Fried Egg)", "calories": 600, "sugar": 8, "saturatedFat": 15, "sodium": 1000, "fiber": 2, "protein": 25},
+    {"name": "Bangsilog (Fried Bangus with Garlic Fried Rice and Fried Egg)", "calories": 480, "sugar": 6, "saturatedFat": 10, "sodium": 800, "fiber": 2, "protein": 28},
+    {"name": "Tosilog (Sweet Pork Tocino with Garlic Fried Rice and Fried Egg)", "calories": 620, "sugar": 20, "saturatedFat": 18, "sodium": 1100, "fiber": 3, "protein": 24},
+    {"name": "Champorado (Chocolate Rice Porridge)", "calories": 400, "sugar": 30, "saturatedFat": 5, "sodium": 300, "fiber": 5, "protein": 8},
+    {"name": "Arroz Caldo (Chicken Rice Porridge)", "calories": 350, "sugar": 3, "saturatedFat": 4, "sodium": 600, "fiber": 2, "protein": 20},
+    {"name": "Pandesal with Jam", "calories": 250, "sugar": 15, "saturatedFat": 3, "sodium": 300, "fiber": 2, "protein": 6},
+    {"name": "Puto with Cheese", "calories": 180, "sugar": 10, "saturatedFat": 2, "sodium": 200, "fiber": 1, "protein": 4},
+    {"name": "Empanada", "calories": 320, "sugar": 8, "saturatedFat": 7, "sodium": 400, "fiber": 2, "protein": 12},
+    {"name": "Sinangag (Garlic Fried Rice)", "calories": 300, "sugar": 2, "saturatedFat": 4, "sodium": 500, "fiber": 1, "protein": 5},
+    {"name": "Lugaw (Rice Porridge)", "calories": 150, "sugar": 1, "saturatedFat": 1, "sodium": 300, "fiber": 1, "protein": 4},
+    {"name": "Balut (Fertilized Duck Egg)", "calories": 188, "sugar": 0, "saturatedFat": 6, "sodium": 40, "fiber": 0, "protein": 14},
+    {"name": "Taho (Soft Tofu with Sago Pearls and Caramel Syrup)", "calories": 180, "sugar": 20, "saturatedFat": 1, "sodium": 30, "fiber": 0, "protein": 6},
+    {"name": "Filipino Spaghetti", "calories": 450, "sugar": 18, "saturatedFat": 10, "sodium": 900, "fiber": 4, "protein": 20},
+    {"name": "Siopao (Steamed Buns with Meat Filling)", "calories": 250, "sugar": 8, "saturatedFat": 4, "sodium": 450, "fiber": 1, "protein": 8},
+    {"name": "Pancit Canton (Stir-Fried Noodles)", "calories": 350, "sugar": 8, "saturatedFat": 5, "sodium": 700, "fiber": 3, "protein": 15},
+    {"name": "Ensaymada (Sweet Brioche Bread)", "calories": 300, "sugar": 20, "saturatedFat": 10, "sodium": 300, "fiber": 1, "protein": 6},
+    {"name": "Chicharon", "calories": 200, "sugar": 0, "saturatedFat": 10, "sodium": 500, "fiber": 0, "protein": 20},
+    {"name": "Bibingka (Rice Cake)", "calories": 250, "sugar": 15, "saturatedFat": 6, "sodium": 300, "fiber": 1, "protein": 5},
+    {"name": "Puto Bumbong (Glutinous Rice Cake)", "calories": 200, "sugar": 10, "saturatedFat": 4, "sodium": 200, "fiber": 1, "protein": 3},
+    {"name": "Suman (Sticky Rice)", "calories": 180, "sugar": 5, "saturatedFat": 2, "sodium": 100, "fiber": 1, "protein": 4},
+    {"name": "Kakanin (Assorted Rice Cakes)", "calories": 220, "sugar": 10, "saturatedFat": 3, "sodium": 150, "fiber": 1, "protein": 5},
+    {"name": "Tinapang Bangus (Smoked Milkfish)", "calories": 280, "sugar": 0, "saturatedFat": 8, "sodium": 600, "fiber": 0, "protein": 18},
+    {"name": "Danggit (Dried Salted Fish)", "calories": 240, "sugar": 0, "saturatedFat": 6, "sodium": 700, "fiber": 0, "protein": 20},
+    {"name": "Tocino (Sweet Cured Pork)", "calories": 300, "sugar": 20, "saturatedFat": 10, "sodium": 900, "fiber": 1, "protein": 15},
+    {"name": "Dried Dilis (Anchovies)", "calories": 160, "sugar": 0, "saturatedFat": 3, "sodium": 800, "fiber": 0, "protein": 18},
+    {"name": "Daing na Bangus (Marinated Milkfish)", "calories": 320, "sugar": 0, "saturatedFat": 10, "sodium": 600, "fiber": 0, "protein": 25},
+    {"name": "Champorado with Tuyo (Chocolate Porridge with Dried Fish)", "calories": 450, "sugar": 30, "saturatedFat": 12, "sodium": 1000, "fiber": 3, "protein": 25},
+    {"name": "Pinoy Hotdog", "calories": 280, "sugar": 2, "saturatedFat": 6, "sodium": 600, "fiber": 1, "protein": 10},
+    {"name": "Tinapa (Smoked Fish)", "calories": 250, "sugar": 0, "saturatedFat": 8, "sodium": 500, "fiber": 0, "protein": 15},
+    {"name": "Chicken Adobo Flakes", "calories": 350, "sugar": 5, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 20},
+    {"name": "Lechon Kawali", "calories": 400, "sugar": 0, "saturatedFat": 15, "sodium": 800, "fiber": 1, "protein": 25},
+    {"name": "Pork Sinigang", "calories": 300, "sugar": 6, "saturatedFat": 8, "sodium": 700, "fiber": 2, "protein": 18},
+    {"name": "Kare-Kare", "calories": 380, "sugar": 5, "saturatedFat": 10, "sodium": 900, "fiber": 3, "protein": 20},
+        {
+            "name": "Chicken Adobo",
+            "calories": 240,
+            "sugar": 1,
+            "saturatedFat": 3.5,
+            "sodium": 850,
+            "fiber": 1,
+            "protein": 24
+        },
+        {
+            "name": "Pancit Canton",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 12
+        },
+        {
+            "name": "Beef Tapa",
+            "calories": 290,
+            "sugar": 2,
+            "saturatedFat": 6,
+            "sodium": 500,
+            "fiber": 0,
+            "protein": 24
+        },
+        {
+            "name": "Sinigang na Baboy",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 2.5,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Lechon Kawali",
+            "calories": 350,
+            "sugar": 0,
+            "saturatedFat": 8,
+            "sodium": 700,
+            "fiber": 0,
+            "protein": 26
+        },
+        {
+            "name": "Tinolang Manok",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 1.5,
+            "sodium": 500,
+            "fiber": 2,
+            "protein": 23
+        },
+        {
+            "name": "Kare-Kare",
+            "calories": 400,
+            "sugar": 5,
+            "saturatedFat": 7,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Chicken Inasal",
+            "calories": 300,
+            "sugar": 1,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 1,
+            "protein": 32
+        },
+        {
+            "name": "Laing",
+            "calories": 200,
+            "sugar": 1,
+            "saturatedFat": 4,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 5
+        },
+        {
+            "name": "Pinakbet",
+            "calories": 150,
+            "sugar": 4,
+            "saturatedFat": 1,
+            "sodium": 300,
+            "fiber": 5,
+            "protein": 4
+        },
+        {
+            "name": "Sisig",
+            "calories": 320,
+            "sugar": 1,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 22
+        },
+        {
+            "name": "Pork Barbecue",
+            "calories": 250,
+            "sugar": 6,
+            "saturatedFat": 5,
+            "sodium": 600,
+            "fiber": 0,
+            "protein": 22
+        },
+        {
+            "name": "Lumpiang Shanghai",
+            "calories": 150,
+            "sugar": 1,
+            "saturatedFat": 2,
+            "sodium": 300,
+            "fiber": 1,
+            "protein": 8
+        },
+        {
+            "name": "Menudo",
+            "calories": 230,
+            "sugar": 3,
+            "saturatedFat": 3.5,
+            "sodium": 500,
+            "fiber": 2,
+            "protein": 16
+        },
+        {
+            "name": "Paksiw na Lechon",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 0,
+            "protein": 20
+        },
+        {
+            "name": "Bulalo",
+            "calories": 350,
+            "sugar": 2,
+            "saturatedFat": 12,
+            "sodium": 900,
+            "fiber": 1,
+            "protein": 26
+        },
+        {
+            "name": "Ginataang Langka",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 4
+        },
+        {
+            "name": "Ginisang Ampalaya",
+            "calories": 100,
+            "sugar": 2,
+            "saturatedFat": 1,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 3
+        },
+        {
+            "name": "Tokwa't Baboy",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 2,
+            "protein": 16
+        },
+        {
+            "name": "Dinuguan",
+            "calories": 260,
+            "sugar": 1,
+            "saturatedFat": 6,
+            "sodium": 600,
+            "fiber": 1,
+            "protein": 22
+        },
+        {
+            "name": "Tortang Talong",
+            "calories": 180,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 3,
+            "protein": 8
+        },
+        {
+            "name": "Arroz Caldo",
+            "calories": 220,
+            "sugar": 1,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 1,
+            "protein": 12
+        },
+        {
+            "name": "Monggo Guisado",
+            "calories": 160,
+            "sugar": 2,
+            "saturatedFat": 1,
+            "sodium": 300,
+            "fiber": 4,
+            "protein": 10
+        },
+        {
+            "name": "Pininyahang Manok",
+            "calories": 240,
+            "sugar": 8,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Bicol Express",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Afritada",
+            "calories": 260,
+            "sugar": 4,
+            "saturatedFat": 3.5,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 22
+        },
+        {
+            "name": "Pochero",
+            "calories": 300,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Mechado",
+            "calories": 270,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Escabeche",
+            "calories": 250,
+            "sugar": 7,
+            "saturatedFat": 2,
+            "sodium": 500,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Gising-Gising",
+            "calories": 140,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 4
+        },
+        {
+            "name": "KBL (Kadyos, Baboy, Langka)",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Pritong Tilapia",
+            "calories": 180,
+            "sugar": 0,
+            "saturatedFat": 2,
+            "sodium": 300,
+            "fiber": 0,
+            "protein": 20
+        },
+        {
+            "name": "Bistek Tagalog",
+            "calories": 230,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 1,
+            "protein": 20
+        },
+        {
+            "name": "Pork Binagoongan",
+            "calories": 310,
+            "sugar": 2,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 22
+        },
+        {
+            "name": "Chopsuey",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 8
+        },
+        {
+            "name": "Tuna Sandwich",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 500,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Spaghetti Bolognese",
+            "calories": 310,
+            "sugar": 8,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Caesar Salad",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 400,
+            "fiber": 3,
+            "protein": 6
+        },
+        {
+            "name": "Turkey Sandwich",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Chicken Caesar Wrap",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Quinoa Salad",
+            "calories": 200,
+            "sugar": 2,
+            "saturatedFat": 1,
+            "sodium": 300,
+            "fiber": 4,
+            "protein": 8
+        },
+        {
+            "name": "Lentil Soup",
+            "calories": 160,
+            "sugar": 2,
+            "saturatedFat": 1,
+            "sodium": 400,
+            "fiber": 6,
+            "protein": 10
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "calories": 220,
+            "sugar": 4,
+            "saturatedFat": 1.5,
+            "sodium": 500,
+            "fiber": 5,
+            "protein": 6
+        },
+        {
+            "name": "Grilled Cheese Sandwich",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 12
+        },
+        {
+            "name": "Beef Burrito",
+            "calories": 400,
+            "sugar": 3,
+            "saturatedFat": 8,
+            "sodium": 1000,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Chicken Tacos",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Margherita Pizza",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 12
+        },
+        {
+            "name": "Greek Salad",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 6
+        },
+        {
+            "name": "Hummus and Pita",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 6,
+            "protein": 10
+        },
+        {
+            "name": "Falafel Wrap",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "BLT Sandwich",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Egg Salad Sandwich",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 12
+        },
+        {
+            "name": "Clam Chowder",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 10
+        },
+        {
+            "name": "Vegetable Curry",
+            "calories": 240,
+            "sugar": 4,
+            "saturatedFat": 2.5,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 8
+        },
+        {
+            "name": "Fish and Chips",
+            "calories": 400,
+            "sugar": 2,
+            "saturatedFat": 5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Shrimp Scampi",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Ratatouille",
+            "calories": 150,
+            "sugar": 6,
+            "saturatedFat": 1.5,
+            "sodium": 300,
+            "fiber": 4,
+            "protein": 4
+        },
+        {
+            "name": "Beef Stroganoff",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 7,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 22
+        },
+        {
+            "name": "Stuffed Peppers",
+            "calories": 250,
+            "sugar": 6,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Chicken Alfredo",
+            "calories": 400,
+            "sugar": 2,
+            "saturatedFat": 8,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Caprese Salad",
+            "calories": 200,
+            "sugar": 4,
+            "saturatedFat": 3,
+            "sodium": 300,
+            "fiber": 2,
+            "protein": 8
+        },
+        {
+            "name": "Pulled Pork Sandwich",
+            "calories": 350,
+            "sugar": 6,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Spinach and Feta Wrap",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 12
+        },
+        {
+            "name": "Chicken Quesadilla",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Black Bean Soup",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 1,
+            "sodium": 600,
+            "fiber": 7,
+            "protein": 12
+        },
+        {
+            "name": "Mushroom Risotto",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 8
+        },
+        {
+            "name": "Teriyaki Chicken Bowl",
+            "calories": 350,
+            "sugar": 8,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Veggie Burger",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 600,
+            "fiber": 6,
+            "protein": 12
+        },
+        {
+            "name": "Chicken Shawarma",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Shrimp Tacos",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Stuffed Cabbage Rolls",
+            "calories": 250,
+            "sugar": 6,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Lamb Gyro",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Pesto Pasta",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 12
+        },
+        {
+            "name": "Baked Ziti",
+            "calories": 400,
+            "sugar": 5,
+            "saturatedFat": 8,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Broccoli and Cheddar Soup",
+            "calories": 250,
+            "sugar": 4,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 10
+        },
+        {
+            "name": "Chickpea Salad",
+            "calories": 220,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 6,
+            "protein": 10
+        },
+        {
+            "name": "Beef Stew",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Sweet and Sour Chicken",
+            "calories": 400,
+            "sugar": 8,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Minestrone Soup",
+            "calories": 180,
+            "sugar": 5,
+            "saturatedFat": 1,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 6
+        },
+        {
+            "name": "BBQ Chicken Sandwich",
+            "calories": 320,
+            "sugar": 6,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Sushi Roll",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 12
+        },
+        {
+            "name": "Korean Beef Bowl",
+            "calories": 350,
+            "sugar": 6,
+            "saturatedFat": 5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Salad",
+            "calories": 200,
+            "sugar": 2,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Lamb Kebabs",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Pho",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 3,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Cauliflower Rice Bowl",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 1,
+            "sodium": 400,
+            "fiber": 5,
+            "protein": 8
+        },
+        {
+            "name": "Thai Curry",
+            "calories": 300,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Tofu Stir Fry",
+            "calories": 250,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "Chicken Burrito Bowl",
+            "calories": 400,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 22
+        },
+        {
+            "name": "Grilled Fish Tacos",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetable Lasagna",
+            "calories": 350,
+            "sugar": 6,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Cobb Salad",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Gyro",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Pad Thai",
+            "calories": 400,
+            "sugar": 6,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Enchiladas",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Ramen",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 12
+        },
+        {
+            "name": "Pasta Primavera",
+            "calories": 320,
+            "sugar": 5,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 12
+        },
+        {
+            "name": "Mango Chicken Salad",
+            "calories": 250,
+            "sugar": 5,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Souvlaki",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Shrimp Fried Rice",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },{
+            "name": "Pork Adobo",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Sinigang na Baboy",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Tinola",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Bistek Tagalog",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Lechon Kawali",
+            "calories": 350,
+            "sugar": 1,
+            "saturatedFat": 8,
+            "sodium": 900,
+            "fiber": 1,
+            "protein": 28
+        },
+        {
+            "name": "Kare-Kare",
+            "calories": 400,
+            "sugar": 4,
+            "saturatedFat": 10,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 30
+        },
+        {
+            "name": "Pancit Canton",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 22
+        },
+        {
+            "name": "Laing",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Empanada",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 14
+        },
+        {
+            "name": "Pinakbet",
+            "calories": 220,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 12
+        },
+        {
+            "name": "Egg Salad Sandwich",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Greek Salad",
+            "calories": 250,
+            "sugar": 4,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "Beef Stir Fry",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Caprese Salad",
+            "calories": 200,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 10
+        },
+        {
+            "name": "Steak Sandwich",
+            "calories": 400,
+            "sugar": 3,
+            "saturatedFat": 7,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Falafel Wrap",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Tuna Nicoise Salad",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Tomato Basil Soup",
+            "calories": 180,
+            "sugar": 5,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 3,
+            "protein": 8
+        },
+        {
+            "name": "Pulled Pork Sandwich",
+            "calories": 350,
+            "sugar": 6,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Quinoa Salad",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 6,
+            "protein": 10
+        },
+        {
+            "name": "Lentil Soup",
+            "calories": 220,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 8,
+            "protein": 12
+        },
+        {
+            "name": "Beef Tacos",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Caesar Salad",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 14
+        },
+        {
+            "name": "Turkey Wrap",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Bean Burrito",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 5,
+            "protein": 20
+        },
+        {
+            "name": "Spinach and Feta Pie",
+            "calories": 300,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Caesar Wrap",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 22
+        },
+        {
+            "name": "Vegetarian Chili",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 7,
+            "protein": 16
+        },
+        {
+            "name": "Mushroom Risotto",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 14
+        },
+        {
+            "name": "Pulled Chicken Sandwich",
+            "calories": 320,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Hummus Wrap",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 6,
+            "protein": 12
+        },
+        {
+            "name": "Tomato Soup",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 3,
+            "protein": 6
+        },
+        {
+            "name": "Beef Burrito",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 24
+        },
+        {
+            "name": "Mediterranean Salad",
+            "calories": 230,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 10
+        },
+        {
+            "name": "Chicken Quesadilla",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Turkey Burger",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Satay",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 22
+        },
+        {
+            "name": "Beef Stroganoff",
+            "calories": 380,
+            "sugar": 4,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Taco Salad",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Fajitas",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Eggplant Parmesan",
+            "calories": 320,
+            "sugar": 5,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Pork Carnitas",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 7,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Cobb Wrap",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 18
+        },
+        {
+            "name": "Shrimp Pasta",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Cheeseburger",
+            "calories": 400,
+            "sugar": 4,
+            "saturatedFat": 8,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Garden Salad",
+            "calories": 180,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 8
+        },
+        {
+            "name": "Salmon Wrap",
+            "calories": 300,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Beef Gyro",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Tortilla Soup",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Pasta Primavera",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 14
+        },
+        {
+            "name": "Pork Stir Fry",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Chicken Pesto Panini",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Mushroom Soup",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 10
+        },
+        {
+            "name": "Veggie Burger",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Pot Pie",
+            "calories": 380,
+            "sugar": 4,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Fish Tacos",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Spinach Salad",
+            "calories": 220,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "Vegetable Soup",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 8
+        },
+        {
+            "name": "Chicken Burrito",
+            "calories": 360,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Tofu Stir Fry",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Shrimp Salad",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Pasta Salad",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Salad Wrap",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Stuffed Bell Peppers",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 14
+        },
+        {
+            "name": "Beef Wrap",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Turkey Chili",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 16
+        },
+        {
+            "name": "Lobster Roll",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Pork Sandwich",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Eggplant Rollatini",
+            "calories": 320,
+            "sugar": 4,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Thai Beef Salad",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Chicken Gyro",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Meatball Sub",
+            "calories": 380,
+            "sugar": 4,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Spring Rolls",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Shrimp Stir Fry",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Pork Chop",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetarian Wrap",
+            "calories": 270,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Fajita Wrap",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Sushi",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 16
+        },
+        {
+            "name": "Lentil Salad",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 8,
+            "protein": 14
+        },
+        {
+            "name": "Vegetarian Pizza",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Alfredo",
+            "calories": 380,
+            "sugar": 4,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 24
+        },
+        {
+            "name": "Pesto Pasta",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Falafel Salad",
+            "calories": 270,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Beef Kabobs",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Shrimp Scampi",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Shawarma",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Tomato Mozzarella Sandwich",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Pulled Pork Wrap",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetable Lasagna",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Grilled Cheese Sandwich",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 14
+        },
+        {
+            "name": "Thai Chicken Salad",
+            "calories": 290,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetarian Sushi",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Beef Enchiladas",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Chicken Wrap",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Pork Tacos",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Mushroom Pasta",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Turkey Club Sandwich",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Bean Salad",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 6,
+            "protein": 14
+        },
+        {
+            "name": "Salmon Salad",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 5,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Pita",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetable Quesadilla",
+            "calories": 270,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Pasta Carbonara",
+            "calories": 380,
+            "sugar": 4,
+            "saturatedFat": 7,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Chicken Caesar Salad",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Beef Sandwich",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Vegetarian Stir Fry",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Shrimp Salad Wrap",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Pork Fried Rice",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Mushroom Burger",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Turkey Meatballs",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Chicken Enchiladas",
+            "calories": 360,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 24
+        },
+        {
+            "name": "Vegetarian Chili",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 5,
+            "protein": 16
+        },
+        {
+            "name": "Caprese Salad",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 12
+        },
+        {
+            "name": "Chicken Pad Thai",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "BBQ Chicken Pizza",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Vegetarian Burrito",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Pork Ribs",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Miso Soup",
+            "calories": 100,
+            "sugar": 2,
+            "saturatedFat": 1,
+            "sodium": 300,
+            "fiber": 2,
+            "protein": 6
+        },
+        {
+            "name": "Avocado Toast",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 400,
+            "fiber": 5,
+            "protein": 8
+        },
+        {
+            "name": "Tuna Salad",
+            "calories": 240,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Vegetable Curry",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Beef Stir Fry",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Chicken Stir Fry",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Pulled Pork Sandwich",
+            "calories": 360,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Caprese Sandwich",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Vegetable Frittata",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 14
+        },
+        {
+            "name": "Chicken Lettuce Wraps",
+            "calories": 270,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Ratatouille",
+            "calories": 220,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 6,
+            "protein": 12
+        },
+        {
+            "name": "Vegetarian Enchiladas",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Tomato Soup",
+            "calories": 180,
+            "sugar": 3,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 8
+        },
+        {
+            "name": "Chicken Quesadilla",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Beef Stew",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Vegetarian Curry",
+            "calories": 270,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Pulled Chicken Sandwich",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Soba Noodle Salad",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 16
+        },
+        {
+            "name": "Tofu Salad",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 4,
+            "protein": 12
+        },
+        {
+            "name": "Lemon Chicken",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetable Tempura",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 14
+        },
+        {
+            "name": "Beef Tacos",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 22
+        },
+        {
+            "name": "Chicken Nachos",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Vegetable Soup",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 2,
+            "sodium": 400,
+            "fiber": 4,
+            "protein": 8
+        },
+        {
+            "name": "Greek Salad",
+            "calories": 230,
+            "sugar": 3,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 6,
+            "protein": 10
+        },
+        {
+            "name": "Turkey Wrap",
+            "calories": 290,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Tenders",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Eggplant Parmesan",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 5,
+            "protein": 18
+        },
+        {
+            "name": "Margarita Pizza",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 14
+        },
+        {
+            "name": "Teriyaki Chicken",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Beef Burger",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Vegetable Ramen",
+            "calories": 280,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Fajitas",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Pasta Primavera",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Hummus Wrap",
+            "calories": 260,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 14
+        },
+        {
+            "name": "Egg Salad",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 12
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "calories": 270,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Chicken Nuggets",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Sesame Noodles",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Pork Stir Fry",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Mushroom Risotto",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Turkey Chili",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Tofu Stir Fry",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "Shrimp Stir Fry",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Vegetable Paella",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Gyros",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Pork Dumplings",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Vegetarian Lasagna",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Cauliflower Curry",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Lentil Soup",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "Beef Tacos",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 22
+        },
+        {
+            "name": "Chicken Fajitas",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Pasta Primavera",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Hummus Wrap",
+            "calories": 260,
+            "sugar": 2,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 14
+        },
+        {
+            "name": "Egg Salad",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 3,
+            "protein": 12
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "calories": 270,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Chicken Nuggets",
+            "calories": 320,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Sesame Noodles",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 16
+        },
+        {
+            "name": "Pork Stir Fry",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Mushroom Risotto",
+            "calories": 310,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Turkey Chili",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Tofu Stir Fry",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 12
+        },
+        {
+            "name": "Shrimp Stir Fry",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Vegetable Paella",
+            "calories": 290,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Chicken Gyros",
+            "calories": 340,
+            "sugar": 3,
+            "saturatedFat": 6,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Pork Dumplings",
+            "calories": 330,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Vegetarian Lasagna",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 5,
+            "sodium": 700,
+            "fiber": 4,
+            "protein": 16
+        },
+        {
+            "name": "Cauliflower Curry",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 4,
+            "sodium": 600,
+            "fiber": 5,
+            "protein": 14
+        },
+        {
+            "name": "Lentil Soup",
+            "calories": 250,
+            "sugar": 2,
+            "saturatedFat": 3,
+            "sodium": 500,
+            "fiber": 5,
+            "protein": 12
+        }, 
+        {
+            "name": "Adobo",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 5.2,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Sinigang",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 3.5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 15
+        },
+        {
+            "name": "Pancit Canton",
+            "calories": 320,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Grilled Chicken Breast",
+            "calories": 200,
+            "sugar": 0,
+            "saturatedFat": 2.5,
+            "sodium": 600,
+            "fiber": 1,
+            "protein": 25
+        },
+        {
+            "name": "Spaghetti Bolognese",
+            "calories": 350,
+            "sugar": 8,
+            "saturatedFat": 7.5,
+            "sodium": 950,
+            "fiber": 5,
+            "protein": 20
+        },
+        {
+            "name": "Salmon Fillet",
+            "calories": 300,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Beef Steak",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Adobong Pusit",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.5,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Vegetable Stir-Fry",
+            "calories": 180,
+            "sugar": 6,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 10
+        },
+        {
+            "name": "Chicken Curry",
+            "calories": 300,
+            "sugar": 5,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Beef Mechado",
+            "calories": 320,
+            "sugar": 4,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Lechon Kawali",
+            "calories": 400,
+            "sugar": 2,
+            "saturatedFat": 10.0,
+            "sodium": 1100,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Kare-Kare",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 8.5,
+            "sodium": 1000,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Beef Kaldereta",
+            "calories": 380,
+            "sugar": 5,
+            "saturatedFat": 9.0,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Tinola",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.0,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Lumpiang Shanghai",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 5.5,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 15
+        },
+        {
+            "name": "Beef Sinigang",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.0,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Pork Adobo",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Bangus Belly",
+            "calories": 240,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 28
+        },
+        {
+            "name": "Pinakbet",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 3.5,
+            "sodium": 650,
+            "fiber": 5,
+            "protein": 15
+        },
+        {
+            "name": "Chicken Tinola",
+            "calories": 230,
+            "sugar": 2,
+            "saturatedFat": 4.2,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Ginataang Kalabasa",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 10
+        },
+        {
+            "name": "Bistek Tagalog",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Pork Sinigang",
+            "calories": 300,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Chop Suey",
+            "calories": 220,
+            "sugar": 3,
+            "saturatedFat": 4.0,
+            "sodium": 750,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Rellenong Bangus",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 7.5,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Bicol Express",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 6.8,
+            "sodium": 950,
+            "fiber": 2,
+            "protein": 28
+        },
+        {
+            "name": "Escabeche",
+            "calories": 250,
+            "sugar": 4,
+            "saturatedFat": 5.0,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Pork Barbecue",
+            "calories": 280,
+            "sugar": 6,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 1,
+            "protein": 25
+        },
+        {
+            "name": "Kilawin",
+            "calories": 200,
+            "sugar": 1,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Pork Sisig",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 22
+        },
+        {
+            "name": "Pochero",
+            "calories": 350,
+            "sugar": 5,
+            "saturatedFat": 7.5,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Tinolang Manok",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.0,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Laing",
+            "calories": 280,
+            "sugar": 3,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Dinuguan",
+            "calories": 300,
+            "sugar": 4,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Bulalo",
+            "calories": 380,
+            "sugar": 2,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Tapa",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 5.2,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Dried Fish (Daing)",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 3.5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 15
+        },
+        {
+            "name": "Lomi",
+            "calories": 320,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Embutido",
+            "calories": 200,
+            "sugar": 0,
+            "saturatedFat": 2.5,
+            "sodium": 600,
+            "fiber": 1,
+            "protein": 25
+        },
+        {
+            "name": "Pansit Malabon",
+            "calories": 350,
+            "sugar": 8,
+            "saturatedFat": 7.5,
+            "sodium": 950,
+            "fiber": 5,
+            "protein": 20
+        },
+        {
+            "name": "Humba",
+            "calories": 300,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Inihaw na Liempo",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Guinataang Manok",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.5,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Pancit Palabok",
+            "calories": 180,
+            "sugar": 6,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 10
+        },
+        {
+            "name": "Lumpiang Gulay",
+            "calories": 300,
+            "sugar": 5,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Gising-Gising",
+            "calories": 320,
+            "sugar": 4,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Kinilaw",
+            "calories": 400,
+            "sugar": 2,
+            "saturatedFat": 10.0,
+            "sodium": 1100,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Adobong Sitaw",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 8.5,
+            "sodium": 1000,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Tahong",
+            "calories": 380,
+            "sugar": 5,
+            "saturatedFat": 9.0,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Sinangag",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.0,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Pancit Batil Patung",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 5.5,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 15
+        },
+        {
+            "name": "Sizzling Sisig",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.0,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Pata Tim",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Pata Paksiw",
+            "calories": 240,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 28
+        },
+        {
+            "name": "Ginataang Hipon",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 3.5,
+            "sodium": 650,
+            "fiber": 5,
+            "protein": 15
+        },
+        {
+            "name": "Chicken Inasal",
+            "calories": 230,
+            "sugar": 2,
+            "saturatedFat": 4.2,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Dinakdakan",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 10
+        },
+        {
+            "name": "Pork Binagoongan",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Paksiw na Lechon",
+            "calories": 300,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Bopis",
+            "calories": 380,
+            "sugar": 2,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Balbacua",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 5.2,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Bagnet",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 3.5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 15
+        },
+        {
+            "name": "Pata Kare-Kare",
+            "calories": 320,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Pocherong Baboy",
+            "calories": 200,
+            "sugar": 0,
+            "saturatedFat": 2.5,
+            "sodium": 600,
+            "fiber": 1,
+            "protein": 25
+        },
+        {
+            "name": "Pocherong Baka",
+            "calories": 350,
+            "sugar": 8,
+            "saturatedFat": 7.5,
+            "sodium": 950,
+            "fiber": 5,
+            "protein": 20
+        },
+        {
+            "name": "Pritong Tilapia",
+            "calories": 300,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Pritong Isda",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Lechon Paksiw",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.5,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Inihaw na Baboy",
+            "calories": 180,
+            "sugar": 6,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 10
+        },
+        {
+            "name": "Inihaw na Bangus",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Inihaw na Pusit",
+            "calories": 300,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Inihaw na Manok",
+            "calories": 380,
+            "sugar": 2,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Ginataang Langka",
+            "calories": 250,
+            "sugar": 3,
+            "saturatedFat": 5.2,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Bicol Express",
+            "calories": 180,
+            "sugar": 4,
+            "saturatedFat": 3.5,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 15
+        },
+        {
+            "name": "Ginataang Hipon",
+            "calories": 320,
+            "sugar": 5,
+            "saturatedFat": 6.8,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 18
+        },
+        {
+            "name": "Sinangag",
+            "calories": 200,
+            "sugar": 0,
+            "saturatedFat": 2.5,
+            "sodium": 600,
+            "fiber": 1,
+            "protein": 25
+        },
+        {
+            "name": "Pancit Malabon",
+            "calories": 350,
+            "sugar": 8,
+            "saturatedFat": 7.5,
+            "sodium": 950,
+            "fiber": 5,
+            "protein": 20
+        },
+        {
+            "name": "Humba",
+            "calories": 300,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Inihaw na Liempo",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Guinataang Manok",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.5,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Pancit Palabok",
+            "calories": 180,
+            "sugar": 6,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 4,
+            "protein": 10
+        },
+        {
+            "name": "Lumpiang Gulay",
+            "calories": 300,
+            "sugar": 5,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Gising-Gising",
+            "calories": 320,
+            "sugar": 4,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Kinilaw",
+            "calories": 400,
+            "sugar": 2,
+            "saturatedFat": 10.0,
+            "sodium": 1100,
+            "fiber": 2,
+            "protein": 30
+        },
+        {
+            "name": "Adobong Sitaw",
+            "calories": 350,
+            "sugar": 3,
+            "saturatedFat": 8.5,
+            "sodium": 1000,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Tahong",
+            "calories": 380,
+            "sugar": 5,
+            "saturatedFat": 9.0,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Sinangag",
+            "calories": 220,
+            "sugar": 2,
+            "saturatedFat": 4.0,
+            "sodium": 750,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Pancit Batil Patung",
+            "calories": 260,
+            "sugar": 3,
+            "saturatedFat": 5.5,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 15
+        },
+        {
+            "name": "Sizzling Sisig",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.0,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 20
+        },
+        {
+            "name": "Pata Tim",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Pata Paksiw",
+            "calories": 240,
+            "sugar": 1,
+            "saturatedFat": 4.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 28
+        },
+        {
+            "name": "Ginataang Hipon",
+            "calories": 200,
+            "sugar": 3,
+            "saturatedFat": 3.5,
+            "sodium": 650,
+            "fiber": 5,
+            "protein": 15
+        },
+        {
+            "name": "Chicken Inasal",
+            "calories": 230,
+            "sugar": 2,
+            "saturatedFat": 4.2,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Dinakdakan",
+            "calories": 180,
+            "sugar": 2,
+            "saturatedFat": 3.0,
+            "sodium": 600,
+            "fiber": 3,
+            "protein": 10
+        },
+        {
+            "name": "Pork Binagoongan",
+            "calories": 280,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 2,
+            "protein": 25
+        },
+        {
+            "name": "Spaghetti Bolognese",
+            "calories": 500,
+            "sugar": 8,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 25
+        },
+        {
+            "name": "Lasagna",
+            "calories": 600,
+            "sugar": 10,
+            "saturatedFat": 8.0,
+            "sodium": 900,
+            "fiber": 5,
+            "protein": 30
+        },
+        {
+            "name": "Chicken Alfredo",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Beef Stroganoff",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 9.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Roast Chicken",
+            "calories": 450,
+            "sugar": 3,
+            "saturatedFat": 5.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 35
+        },
+        {
+            "name": "Beef Wellington",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Shepherd's Pie",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 8.0,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Fish and Chips",
+            "calories": 650,
+            "sugar": 4,
+            "saturatedFat": 9.0,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Shrimp Scampi",
+            "calories": 500,
+            "sugar": 6,
+            "saturatedFat": 7.0,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 22
+        },
+        {
+            "name": "Beef Bourguignon",
+            "calories": 600,
+            "sugar": 5,
+            "saturatedFat": 8.5,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Lamb Tagine",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Paella",
+            "calories": 700,
+            "sugar": 8,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 35
+        },
+        {
+            "name": "Chicken Tikka Masala",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Pad Thai",
+            "calories": 550,
+            "sugar": 5,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Ratatouille",
+            "calories": 500,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 25
+        },
+        {
+            "name": "Sushi",
+            "calories": 450,
+            "sugar": 3,
+            "saturatedFat": 5.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 35
+        },
+        {
+            "name": "Steak Frites",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Vegetable Stir Fry",
+            "calories": 500,
+            "sugar": 6,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Beef Tacos",
+            "calories": 600,
+            "sugar": 7,
+            "saturatedFat": 8.5,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Chicken Quesadilla",
+            "calories": 550,
+            "sugar": 6,
+            "saturatedFat": 7.0,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Grilled Salmon",
+            "calories": 650,
+            "sugar": 4,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Lobster Thermidor",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1100,
+            "fiber": 4,
+            "protein": 35
+        },
+        {
+            "name": "Pulled Pork Sandwich",
+            "calories": 550,
+            "sugar": 6,
+            "saturatedFat": 7.5,
+            "sodium": 950,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Pho",
+            "calories": 500,
+            "sugar": 5,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 4,
+            "protein": 25
+        },
+        {
+            "name": "Cordon Bleu",
+            "calories": 600,
+            "sugar": 4,
+            "saturatedFat": 8.5,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Beef Gyudon",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Chicken Parmesan",
+            "calories": 700,
+            "sugar": 8,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 35
+        },
+        {
+            "name": "Moussaka",
+            "calories": 650,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Falafel",
+            "calories": 500,
+            "sugar": 5,
+            "saturatedFat": 6.5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Beef Wellington",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Beef Bulgogi",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 8.5,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Beef Rendang",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Beef Pho",
+            "calories": 600,
+            "sugar": 5,
+            "saturatedFat": 8.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 35
+        },
+        {
+            "name": "Taco Salad",
+            "calories": 500,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Beef Carpaccio",
+            "calories": 450,
+            "sugar": 3,
+            "saturatedFat": 5.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 35
+        },
+        {
+            "name": "Beef Empanadas",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Beef Wellington",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 8.5,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Beef Skewers",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Beef Tacos",
+            "calories": 700,
+            "sugar": 8,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 35
+        },
+        {
+            "name": "Beef Yakitori",
+            "calories": 650,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Bibimbap",
+            "calories": 500,
+            "sugar": 5,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Bratwurst",
+            "calories": 450,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Buffalo Wings",
+            "calories": 550,
+            "sugar": 3,
+            "saturatedFat": 5.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 35
+        },
+        {
+            "name": "Burrito Bowl",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Calzone",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 8.5,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Caprese Salad",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Carbonara",
+            "calories": 600,
+            "sugar": 8,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 35
+        },
+        {
+            "name": "Cheeseburger",
+            "calories": 650,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Cheese Fondue",
+            "calories": 500,
+            "sugar": 5,
+            "saturatedFat": 6.5,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Cheese Plate",
+            "calories": 450,
+            "sugar": 4,
+            "saturatedFat": 5.0,
+            "sodium": 800,
+            "fiber": 2,
+            "protein": 35
+        },
+        {
+            "name": "Chicken Caesar Salad",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Chicken Cordon Bleu",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 8.5,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Chicken Enchiladas",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Chicken Fajitas",
+            "calories": 700,
+            "sugar": 8,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 35
+        },
+        {
+            "name": "Chicken Kiev",
+            "calories": 650,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Chicken Marsala",
+            "calories": 500,
+            "sugar": 5,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 28
+        },
+        {
+            "name": "Chicken Piccata",
+            "calories": 450,
+            "sugar": 4,
+            "saturatedFat": 6.5,
+            "sodium": 800,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Chicken Pot Pie",
+            "calories": 550,
+            "sugar": 3,
+            "saturatedFat": 5.0,
+            "sodium": 700,
+            "fiber": 2,
+            "protein": 35
+        },
+        {
+            "name": "Chicken Satay",
+            "calories": 700,
+            "sugar": 5,
+            "saturatedFat": 10.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 40
+        },
+        {
+            "name": "Chicken Schnitzel",
+            "calories": 600,
+            "sugar": 6,
+            "saturatedFat": 8.5,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Chicken Shawarma",
+            "calories": 550,
+            "sugar": 7,
+            "saturatedFat": 7.5,
+            "sodium": 850,
+            "fiber": 4,
+            "protein": 30
+        },
+        {
+            "name": "Chicken Stir Fry",
+            "calories": 700,
+            "sugar": 8,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 5,
+            "protein": 35
+        },
+        {
+            "name": "Chili Con Carne",
+            "calories": 650,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 950,
+            "fiber": 4,
+            "protein": 32
+        },
+        {
+            "name": "Chimichanga",
+            "calories": 500,
+            "sugar": 5,
+            "saturatedFat": 7.0,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 28
+        }, 
+        {
+            "name": "Spaghetti Bolognese",
+            "calories": 400,
+            "sugar": 8,
+            "saturatedFat": 5.0,
+            "sodium": 800,
+            "fiber": 4,
+            "protein": 20
+        },
+        {
+            "name": "Pizza Margherita",
+            "calories": 300,
+            "sugar": 4,
+            "saturatedFat": 6.0,
+            "sodium": 700,
+            "fiber": 3,
+            "protein": 18
+        },
+        {
+            "name": "Roast Chicken",
+            "calories": 350,
+            "sugar": 2,
+            "saturatedFat": 7.5,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Beef Stroganoff",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Fish and Chips",
+            "calories": 420,
+            "sugar": 2,
+            "saturatedFat": 8.5,
+            "sodium": 1100,
+            "fiber": 2,
+            "protein": 22
+        },
+        {
+            "name": "Lasagna",
+            "calories": 450,
+            "sugar": 6,
+            "saturatedFat": 10.0,
+            "sodium": 1200,
+            "fiber": 4,
+            "protein": 28
+        },
+        {
+            "name": "Hamburger",
+            "calories": 400,
+            "sugar": 5,
+            "saturatedFat": 7.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Steak",
+            "calories": 500,
+            "sugar": 0,
+            "saturatedFat": 11.0,
+            "sodium": 1300,
+            "fiber": 2,
+            "protein": 32
+        },
+        {
+            "name": "Chicken Parmesan",
+            "calories": 420,
+            "sugar": 4,
+            "saturatedFat": 8.5,
+            "sodium": 1100,
+            "fiber": 3,
+            "protein": 26
+        },
+        {
+            "name": "Pasta Carbonara",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Risotto",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 7.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 20
+        },
+        {
+            "name": "Grilled Salmon",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 28
+        },
+        {
+            "name": "Tacos",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Burritos",
+            "calories": 380,
+            "sugar": 2,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Sushi",
+            "calories": 320,
+            "sugar": 1,
+            "saturatedFat": 7.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Pad Thai",
+            "calories": 400,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 1100,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Beef Wellington",
+            "calories": 450,
+            "sugar": 3,
+            "saturatedFat": 10.0,
+            "sodium": 1200,
+            "fiber": 2,
+            "protein": 28
+        },
+        {
+            "name": "Pulled Pork Sandwich",
+            "calories": 380,
+            "sugar": 4,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 26
+        },
+        {
+            "name": "Fettuccine Alfredo",
+            "calories": 420,
+            "sugar": 5,
+            "saturatedFat": 8.5,
+            "sodium": 1100,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Chicken Tikka Masala",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Stuffed Bell Peppers",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 7.5,
+            "sodium": 900,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Baked Salmon",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 28
+        },
+        {
+            "name": "Beef Tacos",
+            "calories": 300,
+            "sugar": 3,
+            "saturatedFat": 6.5,
+            "sodium": 850,
+            "fiber": 3,
+            "protein": 22
+        },
+        {
+            "name": "Pork Chops",
+            "calories": 380,
+            "sugar": 2,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 30
+        },
+        {
+            "name": "Beef Enchiladas",
+            "calories": 320,
+            "sugar": 1,
+            "saturatedFat": 7.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 18
+        },
+        {
+            "name": "Chicken Quesadillas",
+            "calories": 400,
+            "sugar": 6,
+            "saturatedFat": 8.0,
+            "sodium": 1100,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Paella",
+            "calories": 450,
+            "sugar": 3,
+            "saturatedFat": 10.0,
+            "sodium": 1200,
+            "fiber": 2,
+            "protein": 28
+        },
+        {
+            "name": "Beef Burgers",
+            "calories": 400,
+            "sugar": 4,
+            "saturatedFat": 7.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 26
+        },
+        {
+            "name": "Shrimp Scampi",
+            "calories": 420,
+            "sugar": 5,
+            "saturatedFat": 8.5,
+            "sodium": 1100,
+            "fiber": 3,
+            "protein": 25
+        },
+        {
+            "name": "Eggplant Parmesan",
+            "calories": 380,
+            "sugar": 3,
+            "saturatedFat": 9.0,
+            "sodium": 1000,
+            "fiber": 3,
+            "protein": 24
+        },
+        {
+            "name": "Tandoori Chicken",
+            "calories": 350,
+            "sugar": 4,
+            "saturatedFat": 7.5,
+            "sodium": 900,
+            "fiber": 2,
+            "protein": 22
+        },
+        {
+            "name": "Mongolian Beef",
+            "calories": 320,
+            "sugar": 2,
+            "saturatedFat": 6.0,
+            "sodium": 800,
+            "fiber": 1,
+            "protein": 28
+        },
+            {
+              "name": "Potato Chips",
+              "calories": 152,
+              "sugar": 0,
+              "saturatedFat": 7.1,
+              "sodium": 168,
+              "fiber": 1.8,
+              "protein": 2.0
+            },
+            {
+              "name": "Chocolate Bar",
+              "calories": 235,
+              "sugar": 24,
+              "saturatedFat": 8.2,
+              "sodium": 82,
+              "fiber": 2.3,
+              "protein": 2.3
+            },
+            {
+              "name": "Popcorn (Buttered)",
+              "calories": 170,
+              "sugar": 0,
+              "saturatedFat": 1.5,
+              "sodium": 430,
+              "fiber": 3.6,
+              "protein": 3.4
+            },
+            {
+              "name": "Pretzels",
+              "calories": 108,
+              "sugar": 1,
+              "saturatedFat": 0.7,
+              "sodium": 485,
+              "fiber": 1.5,
+              "protein": 2.6
+            },
+            {
+              "name": "Trail Mix",
+              "calories": 450,
+              "sugar": 12,
+              "saturatedFat": 5.2,
+              "sodium": 160,
+              "fiber": 5.0,
+              "protein": 10.0
+            },
+            {
+              "name": "Cheese and Crackers",
+              "calories": 250,
+              "sugar": 2,
+              "saturatedFat": 10.5,
+              "sodium": 370,
+              "fiber": 1.5,
+              "protein": 9.0
+            },
+            {
+              "name": "Ice Cream",
+              "calories": 290,
+              "sugar": 26,
+              "saturatedFat": 14.5,
+              "sodium": 86,
+              "fiber": 0.8,
+              "protein": 4.0
+            },
+            {
+              "name": "Fruit Yogurt",
+              "calories": 150,
+              "sugar": 20,
+              "saturatedFat": 1.5,
+              "sodium": 85,
+              "fiber": 0.5,
+              "protein": 6.0
+            },
+            {
+              "name": "Nachos",
+              "calories": 360,
+              "sugar": 3,
+              "saturatedFat": 8.2,
+              "sodium": 890,
+              "fiber": 4.0,
+              "protein": 8.0
+            },
+            {
+              "name": "Spring Rolls",
+              "calories": 110,
+              "sugar": 2,
+              "saturatedFat": 0.5,
+              "sodium": 250,
+              "fiber": 2.0,
+              "protein": 4.0
+            },
+            {
+                "name": "Granola Bar",
+                "calories": 190,
+                "sugar": 8,
+                "saturatedFat": 2.0,
+                "sodium": 120,
+                "fiber": 4.0,
+                "protein": 3.0
+              },
+              {
+                "name": "Dried Fruit Mix",
+                "calories": 120,
+                "sugar": 20,
+                "saturatedFat": 0.5,
+                "sodium": 10,
+                "fiber": 3.0,
+                "protein": 1.0
+              },
+              {
+                "name": "Rice Cakes",
+                "calories": 35,
+                "sugar": 0,
+                "saturatedFat": 0.1,
+                "sodium": 60,
+                "fiber": 0.5,
+                "protein": 1.0
+              },
+              {
+                "name": "Fruit Salad",
+                "calories": 80,
+                "sugar": 15,
+                "saturatedFat": 0,
+                "sodium": 5,
+                "fiber": 2.0,
+                "protein": 1.0
+              },
+              {
+                "name": "Roasted Nuts",
+                "calories": 180,
+                "sugar": 2,
+                "saturatedFat": 2.5,
+                "sodium": 5,
+                "fiber": 3.0,
+                "protein": 5.0
+              },
+              {
+                "name": "Smoothie",
+                "calories": 250,
+                "sugar": 30,
+                "saturatedFat": 1.5,
+                "sodium": 45,
+                "fiber": 5.0,
+                "protein": 7.0
+              },
+              {
+                "name": "Hummus and Veggies",
+                "calories": 120,
+                "sugar": 2,
+                "saturatedFat": 1.5,
+                "sodium": 180,
+                "fiber": 4.0,
+                "protein": 4.0
+              },
+              {
+                "name": "Frozen Yogurt",
+                "calories": 150,
+                "sugar": 20,
+                "saturatedFat": 3.5,
+                "sodium": 65,
+                "fiber": 0.5,
+                "protein": 6.0
+              },
+              {
+                "name": "Chips and Salsa",
+                "calories": 220,
+                "sugar": 3,
+                "saturatedFat": 2.0,
+                "sodium": 410,
+                "fiber": 3.0,
+                "protein": 4.0
+              },
+              {
+                "name": "Edamame",
+                "calories": 130,
+                "sugar": 3,
+                "saturatedFat": 0.5,
+                "sodium": 5,
+                "fiber": 6.0,
+                "protein": 11.0
+              },
+              {
+                "name": "Cheese Sticks",
+                "calories": 80,
+                "sugar": 0,
+                "saturatedFat": 4.5,
+                "sodium": 180,
+                "fiber": 0,
+                "protein": 6.0
+              },
+              {
+                "name": "Frozen Grapes",
+                "calories": 70,
+                "sugar": 16,
+                "saturatedFat": 0,
+                "sodium": 0,
+                "fiber": 1.0,
+                "protein": 1.0
+              },
+              {
+                "name": "Fruit Smoothie Bowl",
+                "calories": 300,
+                "sugar": 30,
+                "saturatedFat": 3.0,
+                "sodium": 50,
+                "fiber": 5.0,
+                "protein": 8.0
+              },
+              {
+                "name": "Nut Butter with Apple Slices",
+                "calories": 180,
+                "sugar": 10,
+                "saturatedFat": 2.5,
+                "sodium": 10,
+                "fiber": 5.0,
+                "protein": 4.0
+              },
+              {
+                "name": "Greek Yogurt with Honey",
+                "calories": 150,
+                "sugar": 15,
+                "saturatedFat": 1.5,
+                "sodium": 60,
+                "fiber": 0,
+                "protein": 12.0
+              },
+              {
+                "name": "Dried Seaweed Snack",
+                "calories": 45,
+                "sugar": 0,
+                "saturatedFat": 1.0,
+                "sodium": 100,
+                "fiber": 1.0,
+                "protein": 2.0
+              },
+              {
+                "name": "Cottage Cheese with Pineapple",
+                "calories": 120,
+                "sugar": 10,
+                "saturatedFat": 1.5,
+                "sodium": 300,
+                "fiber": 0,
+                "protein": 14.0
+              },
+              {
+                "name": "Protein Bar",
+                "calories": 220,
+                "sugar": 10,
+                "saturatedFat": 3.0,
+                "sodium": 200,
+                "fiber": 5.0,
+                "protein": 20.0
+              },
+              {
+                "name": "Rice Crackers",
+                "calories": 120,
+                "sugar": 2,
+                "saturatedFat": 0.5,
+                "sodium": 180,
+                "fiber": 1.0,
+                "protein": 2.0
+              },
+              {
+                "name": "Chocolate-covered Almonds",
+                "calories": 160,
+                "sugar": 10,
+                "saturatedFat": 3.5,
+                "sodium": 20,
+                "fiber": 3.0,
+                "protein": 4.0
+              },
+              {
+                "name": "Vegetable Chips",
+                "calories": 140,
+                "sugar": 2,
+                "saturatedFat": 1.0,
+                "sodium": 180,
+                "fiber": 3.0,
+                "protein": 2.0
+              },
+              {
+                "name": "Rice Krispies Treat",
+                "calories": 90,
+                "sugar": 8,
+                "saturatedFat": 1.5,
+                "sodium": 80,
+                "fiber": 0,
+                "protein": 1.0
+              },
+              {
+                "name": "Cucumber Slices with Hummus",
+                "calories": 100,
+                "sugar": 2,
+                "saturatedFat": 1.0,
+                "sodium": 150,
+                "fiber": 3.0,
+                "protein": 4.0
+              },
+              {
+                "name": "Mixed Nuts",
+                "calories": 200,
+                "sugar": 2,
+                "saturatedFat": 3.5,
+                "sodium": 5,
+                "fiber": 4.0,
+                "protein": 6.0
+              },
+              {
+                "name": "Pita Chips with Hummus",
+                "calories": 220,
+                "sugar": 2,
+                "saturatedFat": 2.0,
+                "sodium": 300,
+                "fiber": 4.0,
+                "protein": 5.0
+              },
+              {
+                "name": "Energy Balls",
+                "calories": 150,
+                "sugar": 10,
+                "saturatedFat": 2.0,
+                "sodium": 20,
+                "fiber": 3.0,
+                "protein": 5.0
+              },
+              {
+                "name": "Yogurt-covered Pretzels",
+                "calories": 180,
+                "sugar": 15,
+                "saturatedFat": 2.5,
+                "sodium": 180,
+                "fiber": 1.0,
+                "protein": 3.0
+              },
+              {
+                "name": "Coconut Chips",
+                "calories": 160,
+                "sugar": 8,
+                "saturatedFat": 14.0,
+                "sodium": 20,
+                "fiber": 5.0,
+                "protein": 2.0
+              },
+              {
+                "name": "Apple Slices with Peanut Butter",
+                "calories": 200,
+                "sugar": 10,
+                "saturatedFat": 4.0,
+                "sodium": 120,
+                "fiber": 6.0,
+                "protein": 7.0
+              },
+              {
+                "name": "Chia Pudding",
+                "calories": 120,
+                "sugar": 8,
+                "saturatedFat": 2.0,
+                "sodium": 10,
+                "fiber": 5.0,
+                "protein": 4.0
+              },
+              {
+                "name": "Raisins",
+                "calories": 130,
+                "sugar": 22,
+                "saturatedFat": 0,
+                "sodium": 10,
+                "fiber": 2.0,
+                "protein": 1.0
+              },
+              {
+                "name": "Pumpkin Seeds",
+                "calories": 180,
+                "sugar": 0,
+                "saturatedFat": 3.0,
+                "sodium": 5,
+                "fiber": 5.0,
+                "protein": 9.0
+              },
+              {
+                "name": "Beef Jerky",
+                "calories": 110,
+                "sugar": 8,
+                "saturatedFat": 1.5,
+                "sodium": 590,
+                "fiber": 0,
+                "protein": 15.0
+              },
+              {
+                "name": "Seaweed Chips",
+                "calories": 80,
+                "sugar": 0,
+                "saturatedFat": 0.5,
+                "sodium": 180,
+                "fiber": 1.0,
+                "protein": 2.0
+              },
+              {
+                "name": "Greek Yogurt with Berries",
+                "calories": 160,
+                "sugar": 15,
+                "saturatedFat": 1.5,
+                "sodium": 75,
+                "fiber": 3.0,
+                "protein": 12.0
+              },
+              {
+                "name": "Cheese and Fruit Plate",
+                "calories": 250,
+                "sugar": 15,
+                "saturatedFat": 10.0,
+                "sodium": 300,
+                "fiber": 2.0,
+                "protein": 10.0
+              },
+              {
+                "name": "Tuna Salad on Whole Grain Crackers",
+                "calories": 180,
+                "sugar": 3,
+                "saturatedFat": 2.0,
+                "sodium": 350,
+                "fiber": 4.0,
+                "protein": 15.0
+              },
+              {
+                "name": "Avocado Toast",
+                "calories": 220,
+                "sugar": 2,
+                "saturatedFat": 4.0,
+                "sodium": 200,
+                "fiber": 6.0,
+                "protein": 5.0
+              },
+              {
+                "name": "Smoked Salmon on Cucumber Slices",
+                "calories": 120,
+                "sugar": 1,
+                "saturatedFat": 1.5,
+                "sodium": 250,
+                "fiber": 2.0,
+                "protein": 12.0
+              },
+              {
+                "name": "Egg Salad in Lettuce Wraps",
+                "calories": 140,
+                "sugar": 1,
+                "saturatedFat": 3.0,
+                "sodium": 180,
+                "fiber": 3.0,
+                "protein": 10.0
+              },
+              {
+                "name": "Caprese Salad Skewers",
+                "calories": 120,
+                "sugar": 3,
+                "saturatedFat": 3.0,
+                "sodium": 180,
+                "fiber": 2.0,
+                "protein": 5.0
+              },
+              {
+                "name": "Vegetable Crudité with Ranch Dip",
+                "calories": 100,
+                "sugar": 2,
+                "saturatedFat": 2.0,
+                "sodium": 250,
+                "fiber": 4.0,
+                "protein": 3.0
+              },
+              {
+                "name": "Almond Butter with Celery Sticks",
+                "calories": 150,
+                "sugar": 4,
+                "saturatedFat": 3.0,
+                "sodium": 120,
+                "fiber": 4.0,
+                "protein": 5.0
+              },
+              {
+                "name": "Cottage Cheese with Cherry Tomatoes",
+                "calories": 120,
+                "sugar": 5,
+                "saturatedFat": 2.0,
+                "sodium": 180,
+                "fiber": 1.0,
+                "protein": 10.0
+              },
+              {
+                "name": "Quinoa Salad Cups",
+                "calories": 180,
+                "sugar": 4,
+                "saturatedFat": 1.5,
+                "sodium": 200,
+                "fiber": 5.0,
+                "protein": 6.0
+              },
+              {
+                "name": "Chickpea Salad",
+                "calories": 160,
+                "sugar": 3,
+                "saturatedFat": 2.0,
+                "sodium": 150,
+                "fiber": 4.0,
+                "protein": 8.0
+              },
+              {
+                "name": "Pita Bread with Hummus",
+                "calories": 220,
+                "sugar": 1,
+                "saturatedFat": 2.5,
+                "sodium": 280,
+                "fiber": 4.0,
+                "protein": 6.0
+              },
+              {
+                "name": "Spinach and Feta Stuffed Mushrooms",
+                "calories": 130,
+                "sugar": 2,
+                "saturatedFat": 3.0,
+                "sodium": 220,
+                "fiber": 3.0,
+                "protein": 7.0
+              },
+              {
+                "name": "Sunflower Seeds",
+                "calories": 160,
+                "sugar": 1,
+                "saturatedFat": 1.5,
+                "sodium": 5,
+                "fiber": 3.0,
+                "protein": 6.0
+              },
+              {
+                "name": "Mango Slices with Chili Powder",
+                "calories": 90,
+                "sugar": 15,
+                "saturatedFat": 0,
+                "sodium": 2,
+                "fiber": 2.0,
+                "protein": 1.0
+              }
+            
+          ]
