@@ -306,7 +306,7 @@ public class HomeActivity extends AppCompatActivity{
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            mProgressDialog.setMessage("Optimizing plans...");
+            mProgressDialog.setMessage("Optimizing meal plans...");
             mProgressDialog.setCancelable(false);
             mProgressDialog.show();
         }
@@ -325,23 +325,9 @@ public class HomeActivity extends AppCompatActivity{
                 mProgressDialog.dismiss();
             }
 
-            if (bestPlansArray != null) {
-                for (int i = 0; i < bestPlansArray.length; i++) {
-                    Log.d("RESULT", "START RESULT========================================");
-                    List<FoodItem> bestPlan = bestPlansArray[i];
-                    if (bestPlan != null) {
-                        for (FoodItem meal : bestPlan) {
-                            Log.d("RESULT", meal.name + " - " + meal.calories + " calories");
-                        }
-                    }
-                    Log.d("RESULT", "END RESULT========================================");
-                }
-            }
-
-            // Pass data to another activity
-           // Intent intent = new Intent(mContext, AnotherActivity.class);
-            //intent.putExtra("best_plans", bestPlansArray);
-            //mContext.startActivity(intent);
+            Intent intent = new Intent(mContext, MealsActivity.class);
+            intent.putExtra("best_plans", bestPlansArray);
+            mContext.startActivity(intent);
         }
     }
 }
