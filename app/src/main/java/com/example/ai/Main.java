@@ -1,21 +1,18 @@
 package com.example.ai;
 
-import android.util.Log;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Arrays;
 
 public class Main {
-
-    private static final String TAG = "Main";
 
     ArrayList<String> breakfastInputs = new ArrayList<>();
     ArrayList<String> lunchInputs = new ArrayList<>();
     ArrayList<String> dinnerInputs = new ArrayList<>();
     ArrayList<String> snacksInputs = new ArrayList<>();
     Double calorie;
+    int ctr = 0;
+    List<FoodItem>[] bestPlansArray = new List[10];
 
     void getInput(ArrayList<String> breakfast, ArrayList<String> lunch, ArrayList<String> dinner, ArrayList<String> snacks, Double c) {
         breakfastInputs = breakfast;
@@ -23,32 +20,25 @@ public class Main {
         dinnerInputs = dinner;
         snacksInputs = snacks;
         calorie = c;
-
-        Log.d("USER-INPUT", "Breakfast Inputs: " + breakfastInputs.toString());
-        Log.d("USER-INPUT", "Lunch Inputs: " + lunchInputs.toString());
-        Log.d("USER-INPUT", "Dinner Inputs: " + dinnerInputs.toString());
-        Log.d("USER-INPUT", "Snacks Inputs: " + snacksInputs.toString());
-        Log.d("USER-INPUT", "Calorie: " + calorie);
-
     }
 
     List<FoodItem>[] foodItems;
 
-    void getOptimized() {
+    List<FoodItem>[] getOptimized() {
+        System.out.println("Starting optimization..");
         double calorieLimit = calorie;
-
         initializeFoodItems(breakfastInputs, lunchInputs, dinnerInputs, snacksInputs);
 
         int numGenerations = 5000;
-        int populationSize = 10;
-        int numFoodItems = 4;
+        int populationSize = 30;
         double mutationRate = 0.05;
 
         // Initialize population randomly
         List<List<FoodItem>> population = new ArrayList<>();
         for (int i = 0; i < populationSize; i++) {
-            population.add(generateRandomPlan(numFoodItems));
+            population.add(generateRandomPlan(calorieLimit));
         }
+        ensurePopulationDiversity(population, populationSize, calorieLimit);
 
         // Evolution loop
         for (int generation = 0; generation < numGenerations; generation++) {
@@ -61,14 +51,14 @@ public class Main {
 
             // Select parents based on fitness scores and perform crossover and mutation
             List<List<FoodItem>> newPopulation = new ArrayList<>();
-            for (int i = 0; i < populationSize; i++) {
+            for (int i = 0; i < populationSize / 2; i++) {
                 List<FoodItem>[] parents = selectParents(population, fitnessScores);
                 List<FoodItem>[] children = crossover(parents[0], parents[1]);
-                newPopulation.add(mutate(children[0], mutationRate));
-                newPopulation.add(mutate(children[1], mutationRate));
+                newPopulation.add(mutate(children[0], mutationRate, calorieLimit));
+                newPopulation.add(mutate(children[1], mutationRate, calorieLimit));
             }
 
-            // Clear the old population and replace it with new
+            // Replace the old population with the new
             population.clear();
             population.addAll(newPopulation);
 
@@ -83,14 +73,45 @@ public class Main {
                 }
             }
 
-            // Log best plan and its fitness for this generation
+
+            // Print best plan and its fitness for this generation
             if (bestPlan != null) {
-               // Log.d("GENERATION", "Generation " + generation + ": Best Plan - Fitness: " + bestFitness);
-                for (FoodItem item : bestPlan) {
-                   // Log.d("OPTIMIZED", item.name + " - Calories: " + item.calories);
+                double[] nutrientsTotals = calculateNutrientsTotals(bestPlan);
+                double totalCalories = nutrientsTotals[0];
+                ctr++;
+
+                if(ctr == 1000){
+                    bestPlansArray[1] = bestPlan;
+                }
+                if(ctr == 1500){
+                    bestPlansArray[2] = bestPlan;
+                }
+                if(ctr == 2000){
+                    bestPlansArray[3] = bestPlan;
+                }
+                if(ctr == 2500){
+                    bestPlansArray[4] = bestPlan;
+                }
+                if(ctr == 3000){
+                    bestPlansArray[5] = bestPlan;
+                }
+                if(ctr == 3500){
+                    bestPlansArray[6] = bestPlan;
+                }
+                if(ctr == 4000){
+                    bestPlansArray[7] = bestPlan;
+                }
+                if(ctr == 4500){
+                    bestPlansArray[8] = bestPlan;
+                }
+                if(ctr == 5000){
+                    bestPlansArray[9] = bestPlan;
                 }
             }
-        };
+
+
+        }
+        return bestPlansArray;
     }
 
     void initializeFoodItems(List<String> breakFastInputs, List<String> lunchInputs, List<String> dinnerInputs, List<String> snackInputs) {
@@ -120,27 +141,44 @@ public class Main {
         return foodList;
     }
 
-    List<FoodItem> generateRandomPlan(int numFoodItems) {
+    List<FoodItem> generateRandomPlan(double calorieLimit) {
         List<FoodItem> plan = new ArrayList<>();
+        double totalCalories = 0;
+        Random random = new Random();
 
-        plan.add(randomChoice(foodItems[0]));
-        plan.add(randomChoice(foodItems[1]));
-        plan.add(randomChoice(foodItems[2]));
-        plan.add(randomChoice(foodItems[3]));
-
-        for (int i = 4; i < numFoodItems; i++) {
-            List<FoodItem> allFoodItems = new ArrayList<>();
-            for (List<FoodItem> itemList : foodItems) {
-                allFoodItems.addAll(itemList);
+        // Ensure at least one item from each category
+        for (List<FoodItem> category : foodItems) {
+            if (!category.isEmpty()) {
+                FoodItem randomFoodItem = randomChoice(category);
+                plan.add(randomFoodItem);
+                totalCalories += randomFoodItem.calories;
             }
-            FoodItem randomFoodItem;
-            do {
-                randomFoodItem = randomChoice(allFoodItems);
-            } while (plan.contains(randomFoodItem));
-            plan.add(randomFoodItem);
         }
 
-        shuffle(plan);
+        // Fill the rest of the plan with random items while keeping within calorie limit
+        List<FoodItem> allFoodItems = new ArrayList<>();
+        for (List<FoodItem> itemList : foodItems) {
+            allFoodItems.addAll(itemList);
+        }
+
+        while (totalCalories < calorieLimit && !allFoodItems.isEmpty()) {
+            FoodItem randomFoodItem = randomChoice(allFoodItems);
+            if (totalCalories + randomFoodItem.calories <= calorieLimit) {
+                plan.add(randomFoodItem);
+                totalCalories += randomFoodItem.calories;
+            } else {
+                break; // Exit the loop if remaining items cannot meet the calorie limit
+            }
+            allFoodItems.remove(randomFoodItem);
+        }
+
+
+        // Adjust plan if still under the calorie limit
+        if (totalCalories < calorieLimit && !allFoodItems.isEmpty()) {
+            FoodItem randomFoodItem = randomChoice(allFoodItems);
+            plan.add(randomFoodItem);
+            totalCalories += randomFoodItem.calories;
+        }
 
         return plan;
     }
@@ -151,16 +189,6 @@ public class Main {
         }
         Random random = new Random();
         return itemList.get(random.nextInt(itemList.size()));
-    }
-
-    void shuffle(List<FoodItem> list) {
-        Random random = new Random();
-        for (int i = list.size() - 1; i > 0; i--) {
-            int index = random.nextInt(i + 1);
-            FoodItem temp = list.get(index);
-            list.set(index, list.get(i));
-            list.set(i, temp);
-        }
     }
 
     double[] calculateNutrientsTotals(List<FoodItem> plan) {
@@ -184,7 +212,7 @@ public class Main {
         } else {
             // calculate nutriscore
             NutriscoreCalculator ns = new NutriscoreCalculator();
-            int nutriscore = ns.calculateNutriscore(Arrays.copyOfRange(nutrientsTotals, 0, 5));
+            int nutriscore = ns.calculateNutriscore(nutrientsTotals);
             // Higher fitness for lower nutriscore (more negative)
             return -nutriscore;
         }
@@ -223,7 +251,7 @@ public class Main {
         return new List[]{new ArrayList<>(child1), new ArrayList<>(child2)};
     }
 
-    List<FoodItem> mutate(List<FoodItem> plan, double mutationRate) {
+    List<FoodItem> mutate(List<FoodItem> plan, double mutationRate, double calorieLimit) {
         Random random = new Random();
         if (random.nextDouble() < mutationRate) {
             int mutateIndex = random.nextInt(plan.size());
@@ -231,39 +259,52 @@ public class Main {
             for (List<FoodItem> itemList : foodItems) {
                 allFoodItems.addAll(itemList);
             }
-            FoodItem randomFoodItem;
+
+            if (allFoodItems.isEmpty()) {
+                return plan; // Return the original plan if no items are available
+            }
+
+            FoodItem randomFoodItem = null;
+            int attempts = 0;
+            int maxAttempts = 100; // Maximum attempts to find a valid food item
+
             do {
                 randomFoodItem = randomChoice(allFoodItems);
-            } while (plan.contains(randomFoodItem)); // Ensure no duplicates
+                attempts++;
+                if (attempts >= maxAttempts) {
+                    return plan; // Return the original plan if mutation fails
+                }
+            } while (plan.contains(randomFoodItem) ||
+                    calculateTotalCaloriesWithReplacement(plan, mutateIndex, randomFoodItem) > calorieLimit);
+
             plan.set(mutateIndex, randomFoodItem);
         }
         return plan;
     }
 
-    void logPlan(List<FoodItem> plan) {
-        for (FoodItem meal : plan) {
-            Log.d(TAG, meal.name + " - Calories: " + meal.calories);
+    double calculateTotalCaloriesWithReplacement(List<FoodItem> plan, int indexToReplace, FoodItem newItem) {
+        double totalCalories = 0;
+        for (int i = 0; i < plan.size(); i++) {
+            if (i == indexToReplace) {
+                totalCalories += newItem.calories;
+            } else {
+                totalCalories += plan.get(i).calories;
+            }
         }
+        return totalCalories;
     }
-}
 
-class FoodItem {
-    String name;
-    int calories;
-    int sugar;
-    double saturatedFat;
-    int sodium;
-    int fiber;
-    int protein;
-
-    FoodItem(String name, int calories, int sugar, double saturatedFat, int sodium, int fiber, int protein) {
-        this.name = name;
-        this.calories = calories;
-        this.sugar = sugar;
-        this.saturatedFat = saturatedFat;
-        this.sodium = sodium;
-        this.fiber = fiber;
-        this.protein = protein;
+    void ensurePopulationDiversity(List<List<FoodItem>> population, int populationSize, double calorieLimit) {
+        Random random = new Random();
+        int attempts = 0;
+        int maxAttempts = 1000;
+        while (population.size() < populationSize && attempts < maxAttempts) {
+            List<FoodItem> plan = generateRandomPlan(calorieLimit);
+            if (!population.contains(plan) && plan.size() > 0 ) {
+                population.add(plan);
+            }
+            attempts++;
+        }
     }
 }
 

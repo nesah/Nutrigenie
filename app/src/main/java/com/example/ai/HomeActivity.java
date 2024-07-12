@@ -1,8 +1,13 @@
 package com.example.ai;
 
+import com.example.ai.FoodItem;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity{
 
     LinearLayout breakfastSection, lunchSection, dinnerSection, snacksSection;
     LinearLayout breakfastContent, lunchContent, dinnerContent, snacksContent;
@@ -32,8 +37,10 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<String> sOutput = new ArrayList<>();
     double calorieValue;
 
+    List<FoodItem>[] bestPlansArray = new List[10];
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
@@ -56,50 +63,50 @@ public class HomeActivity extends AppCompatActivity {
 
         btn_optimize = findViewById(R.id.btn_optimize);
 
-        breakfastSection.setOnClickListener(new View.OnClickListener() {
+        breakfastSection.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 toggleVisibility(breakfastContent);
             }
         });
-        lunchSection.setOnClickListener(new View.OnClickListener() {
+        lunchSection.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 toggleVisibility(lunchContent);
             }
         });
-        dinnerSection.setOnClickListener(new View.OnClickListener() {
+        dinnerSection.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 toggleVisibility(dinnerContent);
             }
         });
-        snacksSection.setOnClickListener(new View.OnClickListener() {
+        snacksSection.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 toggleVisibility(snacksContent);
             }
         });
 
-        btn_breakfast.setOnClickListener(new View.OnClickListener() {
+        btn_breakfast.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 addNewRow(breakfastContent);
             }
         });
-        btn_lunch.setOnClickListener(new View.OnClickListener() {
+        btn_lunch.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 addNewRow(lunchContent);
             }
         });
-        btn_dinner.setOnClickListener(new View.OnClickListener() {
+        btn_dinner.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 addNewRow(dinnerContent);
             }
         });
-        btn_snacks.setOnClickListener(new View.OnClickListener() {
+        btn_snacks.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 addNewRow(snacksContent);
@@ -107,9 +114,9 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // button optimize functionality
-        btn_optimize.setOnClickListener(new View.OnClickListener() {
+        btn_optimize.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 // get all user input
                 collectInput();
 
@@ -178,7 +185,7 @@ public class HomeActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Calorie input must be a positive number!", Toast.LENGTH_SHORT).show();
                         }
                         else {
-                            new OptimizeTask().execute();
+                            startOptimizeTask();
                         }
                     }
                     catch (NumberFormatException e) {
@@ -282,21 +289,59 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    class OptimizeTask extends AsyncTask<Void, Void, Void> {
+    private void startOptimizeTask() {
+        new OptimizeTask(this).execute();
+    }
 
-        @Override
-        protected Void doInBackground(Void... voids) {
-            Main m = new Main();
-            m.getInput(bOutput, lOutput, dOutput, sOutput, calorieValue);
-            m.getOptimized();
-            return null;
+    public class OptimizeTask extends AsyncTask<Void, Void, List<FoodItem>[]> {
+
+        private Context mContext;
+        private ProgressDialog mProgressDialog;
+
+        public OptimizeTask(Context context) {
+            this.mContext = context;
+            mProgressDialog = new ProgressDialog(mContext);
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-            // Perform any UI updates here if needed
-            Toast.makeText(getApplicationContext(), "Optimization complete!", Toast.LENGTH_SHORT).show();
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mProgressDialog.setMessage("Optimizing plans...");
+            mProgressDialog.setCancelable(false);
+            mProgressDialog.show();
+        }
+
+        @Override
+        protected List<FoodItem>[] doInBackground(Void... voids) {
+            Main m = new Main();
+            m.getInput(bOutput, lOutput, dOutput, sOutput, calorieValue);
+            return m.getOptimized();
+        }
+
+        @Override
+        protected void onPostExecute(List<FoodItem>[] bestPlansArray) {
+            super.onPostExecute(bestPlansArray);
+            if (mProgressDialog.isShowing()) {
+                mProgressDialog.dismiss();
+            }
+
+            if (bestPlansArray != null) {
+                for (int i = 0; i < bestPlansArray.length; i++) {
+                    Log.d("RESULT", "START RESULT========================================");
+                    List<FoodItem> bestPlan = bestPlansArray[i];
+                    if (bestPlan != null) {
+                        for (FoodItem meal : bestPlan) {
+                            Log.d("RESULT", meal.name + " - " + meal.calories + " calories");
+                        }
+                    }
+                    Log.d("RESULT", "END RESULT========================================");
+                }
+            }
+
+            // Pass data to another activity
+           // Intent intent = new Intent(mContext, AnotherActivity.class);
+            //intent.putExtra("best_plans", bestPlansArray);
+            //mContext.startActivity(intent);
         }
     }
 }
