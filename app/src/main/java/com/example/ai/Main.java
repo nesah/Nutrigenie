@@ -73,43 +73,41 @@ public class Main {
                 }
             }
 
-
             // Print best plan and its fitness for this generation
             if (bestPlan != null) {
                 double[] nutrientsTotals = calculateNutrientsTotals(bestPlan);
                 double totalCalories = nutrientsTotals[0];
+                System.out.println("Generation " + generation + " Best Plan Calories: " + totalCalories + " Fitness: " + bestFitness);
                 ctr++;
 
-                if(ctr == 1000){
+                if (ctr == 1000) {
                     bestPlansArray[1] = bestPlan;
                 }
-                if(ctr == 1500){
+                if (ctr == 1500) {
                     bestPlansArray[2] = bestPlan;
                 }
-                if(ctr == 2000){
+                if (ctr == 2000) {
                     bestPlansArray[3] = bestPlan;
                 }
-                if(ctr == 2500){
+                if (ctr == 2500) {
                     bestPlansArray[4] = bestPlan;
                 }
-                if(ctr == 3000){
+                if (ctr == 3000) {
                     bestPlansArray[5] = bestPlan;
                 }
-                if(ctr == 3500){
+                if (ctr == 3500) {
                     bestPlansArray[6] = bestPlan;
                 }
-                if(ctr == 4000){
+                if (ctr == 4000) {
                     bestPlansArray[7] = bestPlan;
                 }
-                if(ctr == 4500){
+                if (ctr == 4500) {
                     bestPlansArray[8] = bestPlan;
                 }
-                if(ctr == 5000){
+                if (ctr == 5000) {
                     bestPlansArray[9] = bestPlan;
                 }
             }
-
-
         }
         return bestPlansArray;
     }
